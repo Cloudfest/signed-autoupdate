@@ -45,6 +45,14 @@ class Update
     }
 
     /**
+     * @param string $temp_dir
+     */
+    public function setTempDir($temp_dir)
+    {
+        $this->temp_dir = $temp_dir;
+    }
+
+    /**
      * Get the update file
      * @param string/url $download_url
      * @return int|bool The function returns the number of bytes that were written to the file, or
@@ -52,15 +60,17 @@ class Update
      */
     public function download($download_url)
     {
-        return file_put_contents($this->temp_dir.'/update.zip',file_get_contents($download_url));
+        $filepath = $this->temp_dir.'/update.zip';
+        file_put_contents($filepath,file_get_contents($download_url));
+        return $filepath;
     }
 
-    public function extract($zipfile)
+    public function extract($zipfile,$destination)
     {
         $zip = new ZipArchive;
         $res = $zip->open($zipfile);
         if ($res === TRUE) {
-            $zip->extractTo($this->temp_dir);
+            $zip->extractTo($destination);
             $zip->close();
             return true;
         } else {
@@ -75,7 +85,7 @@ class Update
      */
     public function load_verification_file($file)
     {
-        return file_get_contents($this->temp_dir.$file);
+        return $this->decrypt_file_content(file_get_contents($this->temp_dir.$file));
     }
 
     /**
@@ -90,10 +100,8 @@ class Update
         );
         if ($signed_file_list === false) {
             $this->failed_signature();
-            exit();
-        } else {
-            $this->check_integrety($this->temp_dir,$signed_file_list);
         }
+        return $signed_file_list;
     }
 
     /**
@@ -102,7 +110,8 @@ class Update
      */
     public function failed_signature()
     {
-        return "Invalid signature";
+        $this->cleanup();
+        die("Invalid signature");
     }
 
     /**
@@ -111,14 +120,29 @@ class Update
      */
     public function failed_count()
     {
-        return "Invalid count of files";
+        $this->cleanup();
+        die("Invalid count of files");
     }
 
-    public function check_integrety($temp_dir,$signed_file_list)
+    /**
+     * Remove all data from update
+     */
+    public function cleanup()
+    {
+        unlink($this->temp_dir);
+    }
+
+
+    /**
+     * Check the integrety of the Zipfile
+     * @param $temp_dir
+     * @param $signed_file_list
+     */
+    public function check_integrety($signed_file_list)
     {
 
         $signatures = json_decode($signed_file_list);
-        if ($this->countfiles($temp_dir) !== count($signatures['signatures'])){
+        if ($this->countfiles($this->temp_dir) !== count($signatures['signatures'])){
             $this->failed_count();
             exit();
         }
@@ -126,9 +150,13 @@ class Update
         foreach($signatures['signatures'] as $fileinfo){
             $this->compare($fileinfo['file'],$fileinfo['hash']);
         }
-
     }
 
+    /**
+     * Count files in a given directory
+     * @param $dir
+     * @return int
+     */
     public function countfiles($dir)
     {
         $dir = opendir($dir);
@@ -139,13 +167,33 @@ class Update
         return $i;
     }
 
-
+    /**
+     * Compare signatures of veryfication file with hashes
+     * @param $file
+     * @param $signature
+     * @return bool|string
+     */
     public function compare($file,$signature)
     {
         if(hash_file($this->algo,$file) !== $signature){
             return $this->failed_signature();
-            exit();
         }
+        return true;
+    }
+
+    /**
+     * Process the update from a given URL
+     * @param $url
+     * @return bool|string
+     */
+    public function ProcessUpdate($url)
+    {
+        $zipfilePath = $this->download($url);
+        $this->extract($zipfilePath,$this->temp_dir);
+        $veryficationFile = $this->load_verification_file($this->temp_dir.'signatures.json');
+        $this->check_integrety($veryficationFile);
+        $this->extract($zipfilePath,$this->update_dir);
+        $this->cleanup();
         return true;
     }
 }
