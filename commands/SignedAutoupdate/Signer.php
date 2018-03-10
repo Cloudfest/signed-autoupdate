@@ -12,9 +12,7 @@ use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Filesystem\Exception\IOExceptionInterface;
 
 /**
- * A WebFinger CLI class
- *
- * @author Matthias Pfefferle <matthias@pfefferle.org>
+ * A Signer CLI class
  */
 class Signer extends Command
 {
