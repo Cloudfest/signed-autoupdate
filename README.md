@@ -4,7 +4,7 @@ https://docs.google.com/document/d/1iRSns-AMslhaMeXPssv33ko7q07oZSsYtk7fQe0qfAs/
 
 ## CLI
 
-The CLI supports three commands
+The CLI helps you to generate a keypair, to sign a package and to verify you signed package.
 
 ### Commands
 
