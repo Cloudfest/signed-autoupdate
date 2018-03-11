@@ -59,3 +59,28 @@ $ box build -v
 ```
 
 in the root of the `cli` folder.
+
+# WordPress Plugin
+
+## Description
+
+Plugin will inject via add_filter into the download process of a plugin and checks for existence of some files. If 
+signatures existing it will try to verify the files signatures. The plugin also allows deletion and editing of public
+keys.
+
+So:
+
+- will check for existence of: .well-known/signature.txt, .well-known/publickey.txt, .well-known/list.json
+- if existing:
+  - and public key is new, stores to trusted store
+  - and public key is old, checks against public key the same
+  - will block update if not the same keys
+  - will verify with signature, public key and the list.json if the package is valid
+- the SAU Signatures shows already known signatures for editing / deletion
+
+
+## Screens
+
+* [Package List View](!/doc/package-list-view.png)
+* [New Key Add During First Install](!/doc/new-key-found.png)
+* [Reject Installation on Error](!/doc/installation-rejected-key-mismatch.png)
