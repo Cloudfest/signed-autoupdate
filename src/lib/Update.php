@@ -19,7 +19,12 @@ class Update
         $this->setTempDir($updateDir.'/tmp');
         $this->setUpdateDir($updateDir);
         $this->setPublicKey($publicKey);
-        $this->ProcessUpdate($updateURL);
+
+        try{
+            $this->ProcessUpdate($updateURL);
+        }catch(Exception $exception){
+
+        }
     }
 
     /**
@@ -56,15 +61,49 @@ class Update
     }
 
     /**
+     * Recursive deletes directory
+     * @param $dir
+     */
+    public function rrmdir($dir) {
+        if (is_dir($dir)) {
+            $objects = scandir($dir);
+            foreach ($objects as $object) {
+                if ($object != "." && $object != "..") {
+                    if (is_dir($dir."/".$object))
+                        $this->rrmdir($dir."/".$object);
+                    else
+                        unlink($dir."/".$object);
+                }
+            }
+            rmdir($dir);
+        }
+    }
+
+    /**
      * Get the update file
      * @param string/url $download_url
      * @return int|bool The function returns the number of bytes that were written to the file, or
      * false on failure.
      */
-    public function download($download_url)
+    public function download($url)
     {
-        $filepath = $this->tempDir.'/update.zip';
-        file_put_contents($filepath,file_get_contents($download_url));
+        if (!is_dir($this->tempDir)) {
+            mkdir($this->tempDir, 0777, true);
+        }
+        $filepath = $this->tempDir . '/' . basename($url);
+
+        $fp = fopen($filepath, 'w+');
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        $data = curl_exec($ch);
+        fputs($fp, $data);
+        fclose($fp);
+        curl_close($ch);
+
+        if(!file_exists($filepath)){
+            return 'Download failed to retrieve the update file';
+        }
         return $filepath;
     }
 
@@ -82,20 +121,10 @@ class Update
     }
 
     /**
-     * Load the verification file from the temp dir to decrypt
-     * @param $file
-     * @return bool|string
-     */
-    public function load_verification_file($file)
-    {
-        if(file_exists($file)){
-            echo 'file does not exist';
-        }
-        return $this->verify();
-    }
-
-    /**
+     * Gather Signatures and the verifies that list.json is signed.
      * @return string/json content listfile
+     * @throws SodiumException
+     * @throws TypeError
      */
     public function verify(){
         $signature = hex2bin(file_get_contents($this->tempDir.'/.well-known/signature.txt'));
@@ -107,9 +136,8 @@ class Update
                 $this->failed_signature();
             }
         }elseif(class_exists('ParagonIE_Sodium_Compat')){
-            //require the libsodium-compat would also be possible because libsodium-compat uses php libsodium if installed
             if (!ParagonIE_Sodium_Compat::crypto_sign_verify_detached($signature, $listfile, $publicKey)) {
-                die('fail!');
+                $this->failed_signature();
             }
         }else{
             //no verification possible so clean up and throw error.
@@ -120,7 +148,7 @@ class Update
     }
 
     /**
-     * gets triggered when the verification file couldn't get decrypted or a signature fails
+     * Gets triggered when the verification file couldn't get decrypted or a signature fails
      * @return string
      */
     public function failed_signature()
@@ -130,7 +158,7 @@ class Update
     }
 
     /**
-     * gets triggered when the file count is not the same as in verification file
+     * Gets triggered when the file count is not the same as in verification file
      * @return string
      */
     public function failed_count()
@@ -144,49 +172,55 @@ class Update
      */
     public function cleanup()
     {
-        #unlink($this->tempDir);
+        $this->rrmdir($this->tempDir);
     }
 
 
     /**
-     * Check the integrity of the Zipfile
+     * Check the integrity of all files
+     * First: Count number of files in update and number of files that have a signature.
+     * Second: Hash every file and compare with given file Hash from the signed file list
      * @param $signed_file_list
      * @return bool
      */
-    public function check_integrety($signed_file_list)
+    public function checkIntegrity($signed_file_list)
     {
         $signatures = json_decode($signed_file_list,true);
         $this->setAlgorithm($signatures['algorithm']);
 
         if ($this->countFiles($this->tempDir) !== count($signatures['signatures'])){
-            echo $this->countFiles($this->tempDir).'---'.count($signatures['signatures']);
             $this->failed_count();
         }
 
         foreach($signatures['signatures'] as $fileinfo){
             $this->compare($fileinfo['file'],$fileinfo['hash']);
         }
-
         return true;
     }
 
     /**
-     * Count files in a given directory
-     * @param $dir
+     * Count files in a given directory, disregard the list.json & signature.txt as well as directory traversal
+     * @param $path
      * @return int file count
      */
-    public function countFiles($dir)
+    public function countFiles($path)
     {
-        $dir = opendir($dir);
-        $i = 0;
-        while (false !== ($file = readdir($dir))) {
-            if (!in_array($file, array('.', '..','.well-known','update.zip')) && !is_dir($file) ){ $i++;}
+        $size = 0;
+        $ignore = array('.','..','list.json','signature.txt');
+        $files = scandir($path);
+        foreach($files as $t) {
+            if(in_array($t, $ignore)) continue;
+            if (is_dir(rtrim($path, '/') . '/' . $t)) {
+                $size += $this->countFiles(rtrim($path, '/') . '/' . $t);
+            } else {
+                $size++;
+            }
         }
-        return $i;
+        return $size;
     }
 
     /**
-     * Compare signatures of verification file with hashes
+     * Compare signatures of signed file list with hashes
      * @param $file
      * @param $signature
      * @return bool|string
@@ -199,23 +233,30 @@ class Update
         return true;
     }
 
+
     /**
-     * Process the update from a given URL
+     * Process the update from a given URL, download Zip and extract for check.
+     * If check fails and after the update was successful clean up remaining files.
      * @param $url
      * @return bool|string
+     * @throws SodiumException
+     * @throws TypeError
      */
     public function ProcessUpdate($url)
     {
         $zipfilePath = $this->download($url);
-        if (!is_dir($this->tempDir)) {
-            mkdir($this->tempDir);
+        $response = $this->extract($zipfilePath,$this->tempDir);
+
+        if($response){
+            $verificationFile = $this->verify();
+            $this->checkIntegrity($verificationFile);
         }
-        #$this->extract($zipfilePath,$this->tempDir);
-        $verificationFile = $this->verify();
-        $this->check_integrety($verificationFile);
-        #$this->extract($zipfilePath,$this->updateDir);
-        echo 'Update successful';
-        $this->cleanup();
-        return true;
+
+        $response = $this->extract($zipfilePath,$this->updateDir);
+        if(!$response){
+            $this->cleanup();
+            return 'Update successful';
+        }
+        return 'Update failed';
     }
 }
