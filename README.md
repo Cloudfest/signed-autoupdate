@@ -81,6 +81,6 @@ So:
 
 ## Screens
 
-* [Package List View](!/doc/package-list-view.png)
-* [New Key Add During First Install](!/doc/new-key-found.png)
-* [Reject Installation on Error](!/doc/installation-rejected-key-mismatch.png)
+* ![Package List View](doc/package-list-view.png)
+* ![New Key Add During First Install](doc/new-key-found.png)
+* ![Reject Installation on Error](doc/installation-rejected-key-mismatch.png)
