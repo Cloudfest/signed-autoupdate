@@ -4,8 +4,10 @@ docker-compose down
 #rm -rf signed-autoupdate
 
 git clone https://github.com/WordPress/WordPress.git
-git clone https://github.com/Cloudfest/signed-autoupdate.git -b wordpress-plugin-test
+#git clone https://github.com/Cloudfest/signed-autoupdate.git -b wordpress-plugin
+git clone https://github.com/Cloudfest/signed-autoupdate.git signed-autoupdate
 docker-compose up -d
+
 #do wp magic to install wordpress
 echo "sleeping 10s to wait for containers boot up"
 sleep 10
