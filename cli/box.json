@@ -1,0 +1,16 @@
+{
+    "chmod": "0755",
+    "directories": [
+        "libs",
+        "commands",
+        "applications"
+    ],
+    "finder": [{
+        "name": "*.php",
+        "exclude": ["test", "tests", "Test", "Tests"],
+        "in": "vendor"
+    }],
+    "main": "signer.php",
+    "output": "bin/signer.phar",
+    "stub": true
+}
