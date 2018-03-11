@@ -3,7 +3,7 @@
 Plugin Name:  Signed Autoupdate
 Plugin URI:   http://localhost
 Description:  SignedAutoUpdate
-Version:      0.0.1-prototype
+Version:      0.0.2-prototype
 Author:       cloudfest/signed-autoupdate group
 Author URI:   https://github.com/Cloudfest/signed-autoupdate
 License:      ?
@@ -12,37 +12,14 @@ Text Domain:  wporg
 Domain Path:  /languages
 */
 
-/**
- * @param bool $false
- * @param string $downloadUrl
- * @param WP_Upgrader $wpUpgrader
- *
- * @return bool|string
- */
-function signed_autoupdate_upgrader_pre_download($false = false, $package = null, $wpUpgrader = null) {
-    $folder = __DIR__ . '/temp/';
-    $id = md5($package);
 
-    if (file_exists($folder . '/' . $id)) {
-        return $folder . '/' . $id;
-    }
-    $wpUpgrader->skin->feedback( 'downloading_package', $package );
-    $download_file = download_url( $package );
+require_once 'class.signed-autoupdate-helpers.php';
+require_once 'class.signed-autoupdate.minitemplate.php';
+require_once 'class.signed-autoupdate.trusted-store.php';
+require_once 'class.signed-autoupdate.package-info.php';
+require_once 'class.signed-autoupdate.php';
 
-    if ( is_wp_error( $download_file ) ) {
-        return new WP_Error( 'download_failed', $this->strings['download_failed'], $download_file->get_error_message() );
-    }
+require_once 'vendor/paragonie/sodium_compat/autoload.php';
 
-    //verification
-    //@todo add real implementation here
-
-    //md5 is the one from plugin: Shortcake (Shortcode UI)
-    if (md5_file($download_file) != '041bc6c6097e709502c0d4855a069913') {
-        unlink($download_file);
-        return new WP_Error('download_failed', 'download package verification failed');
-    }
-
-    return $download_file;
-}
-
-add_filter('upgrader_pre_download', 'signed_autoupdate_upgrader_pre_download', 10, 3);
+$signedAutoupdate = SignedAutoUpdate::getInstance();
+$signedAutoupdate->admin_init();
