@@ -1,15 +1,18 @@
 {
-  "name": "vendor_name/package_name",
-  "description": "description_text",
+  "name": "signed-autoupdate/signed-autoupdate",
+  "description": "lib for signed autoupdate",
   "minimum-stability": "stable",
-  "license": "proprietary",
+  "license": "MIT",
   "authors": [
     {
-      "name": "author's name",
-      "email": "email@example.com"
+      "name": "Michael Klein"
     }
   ],
+  "autoload":{
+    "files":["lib/src/Update.php"]
+  },
   "require": {
+    "php": ">= 5.4",
     "paragonie/sodium_compat": "^1.6"
   }
 }
