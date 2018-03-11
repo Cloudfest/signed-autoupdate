@@ -70,6 +70,10 @@ $ box build -v
 
 in the root of the `cli` folder.
 
+#### Screens
+
+![Package List View](doc/well-known.png)
+
 ### WordPress Plugin
 
 #### Description
