@@ -9,7 +9,7 @@ services:
       - db
     volumes:
       - ./WordPress:/var/www/html
-      - ./signed-autoupdate:/var/www/html/wp-content/plugins/signed-autoupdate
+      - ./signed-autoupdate/wordpress-plugin:/var/www/html/wp-content/plugins/signed-autoupdate
   db:
     container_name: wordpress-database
     image: mysql:latest
