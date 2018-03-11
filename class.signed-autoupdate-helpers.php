@@ -19,7 +19,6 @@ if (!function_exists('signed_autoupdate_upgrader_pre_download')) {
             throw new Exception('unsupported download format, can not parse resulting unzip folder from: ' . $info);
         }
         $pluginKey = $res[1];
-        $workingFolder .=  $pluginKey;
 
 
         $wpUpgrader->skin->feedback( 'downloading_package', $package );
@@ -41,6 +40,8 @@ if (!function_exists('signed_autoupdate_upgrader_pre_download')) {
         if ($result instanceof WP_Error) {
             return $result;
         }
+        //dive into subfolder
+        $workingFolder .=  $pluginKey;
 
 
         $publicKeyFromPackage = false;
@@ -56,7 +57,7 @@ if (!function_exists('signed_autoupdate_upgrader_pre_download')) {
             if(file_exists($workingFolder . $file)) {
                 $$var = file_get_contents($workingFolder . $file);
             } else {
-                $wpUpgrader->skin->feedback('package has not all required files for using signed-autoupdate feature');
+                $wpUpgrader->skin->feedback('package has not all required files for using signed-autoupdate feature, missing:' . $var . ' in ' . $workingFolder . $file);
                 return $download_file;
             }
         }
