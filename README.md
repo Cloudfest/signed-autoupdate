@@ -74,6 +74,24 @@ in the root of the `cli` folder.
 
 ![Package List View](doc/well-known.png)
 
+### Client Implementation
+
+Installation via Composer
+```bash
+composer require signed-autoupdate/signed-autoupdate
+```
+
+Client Implementation is straightforward you need only your download package in zip format as well as your pre-installed Public Key.
+
+Usage example:
+```php
+include_once __DIR__ . '/vendor/autoload.php';
+
+$public_key = hex2bin('<Public Key>');
+$update = new Update('https://example.com/update.zip',__DIR__.'/update-deploy',$public_key);
+```
+If the signature fails, the number of files in the update package is off or the file hashes don't match the update will not be processed and the zip file will be discarded.
+
 ### WordPress Plugin
 
 #### Description
