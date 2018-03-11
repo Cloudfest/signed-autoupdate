@@ -95,11 +95,11 @@ class Update
     }
 
     /**
-     * @return bool if signature was valid
+     * @return string/json content listfile
      */
     public function verify(){
-        $signature = hex2bin(file_get_contents($this->tempDir.'/signature.txt'));
-        $listfile = file_get_contents($this->tempDir.'/list.json');
+        $signature = hex2bin(file_get_contents($this->tempDir.'/.well-known/signature.txt'));
+        $listfile = file_get_contents($this->tempDir.'/.well-known/list.json');
         $publicKey = $this->publicKey;
 
         if(function_exists('sodium_crypto_sign_verify_detached')){
@@ -109,7 +109,7 @@ class Update
         }elseif(class_exists('ParagonIE_Sodium_Compat')){
             //require the libsodium-compat would also be possible because libsodium-compat uses php libsodium if installed
             if (!ParagonIE_Sodium_Compat::crypto_sign_verify_detached($signature, $listfile, $publicKey)) {
-                $this->failed_signature();
+                die('fail!');
             }
         }else{
             //no verification possible so clean up and throw error.
