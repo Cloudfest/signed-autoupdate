@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Omega
+ * User: Omegatcu
  * Date: 10.03.2018
  * Time: 17:41
  */
@@ -16,6 +16,7 @@ class Update
 
     public function __construct($updateURL, $updateDir, $publicKey)
     {
+        $this->setTempDir($updateDir.'/tmp');
         $this->setUpdateDir($updateDir);
         $this->setPublicKey($publicKey);
         $this->ProcessUpdate($updateURL);
@@ -87,24 +88,35 @@ class Update
      */
     public function load_verification_file($file)
     {
-        return $this->decrypt_file_content(file_get_contents($this->tempDir.DIRECTORY_SEPARATOR.$file));
+        if(file_exists($file)){
+            echo 'file does not exist';
+        }
+        return $this->verify();
     }
 
     /**
-     * Decrypt the verification file with libsodium
-     * @param $file_content
-     * @return string/json singed file list
+     * @return bool if signature was valid
      */
-    public function decrypt_file_content($file_content)
-    {
-        $signed_file_list = sodium_crypto_sign_open(
-            $file_content,
-            $this->publicKey
-        );
-        if ($signed_file_list === false) {
-            $this->failed_signature();
+    public function verify(){
+        $signature = hex2bin(file_get_contents($this->tempDir.'/signature.txt'));
+        $listfile = file_get_contents($this->tempDir.'/list.json');
+        $publicKey = $this->publicKey;
+
+        if(function_exists('sodium_crypto_sign_verify_detached')){
+            if (!sodium_crypto_sign_verify_detached($signature, $listfile, $publicKey)) {
+                $this->failed_signature();
+            }
+        }elseif(class_exists('ParagonIE_Sodium_Compat')){
+            //require the libsodium-compat would also be possible because libsodium-compat uses php libsodium if installed
+            if (!ParagonIE_Sodium_Compat::crypto_sign_verify_detached($signature, $listfile, $publicKey)) {
+                $this->failed_signature();
+            }
+        }else{
+            //no verification possible so clean up and throw error.
+            $this->cleanup();
+            die('Libsoddium not loaded');
         }
-        return $signed_file_list;
+        return $listfile;
     }
 
     /**
@@ -143,9 +155,6 @@ class Update
      */
     public function check_integrety($signed_file_list)
     {
-        if($this->tempDir === ''){
-            $this->setTempDir($this->updateDir.'/tmp');
-        }
         $signatures = json_decode($signed_file_list);
         $this->setAlgorithm($signatures['algorithm']);
 
@@ -198,7 +207,7 @@ class Update
     {
         $zipfilePath = $this->download($url);
         $this->extract($zipfilePath,$this->tempDir);
-        $verificationFile = $this->load_verification_file($this->tempDir.DIRECTORY_SEPARATOR.'signatures.json');
+        $verificationFile = $this->verify();
         $this->check_integrety($verificationFile);
         $this->extract($zipfilePath,$this->updateDir);
         $this->cleanup();
