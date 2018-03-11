@@ -1,1 +1,3 @@
 vendor
+/secretkey.txt
+/publickey.txt

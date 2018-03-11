@@ -4,19 +4,27 @@
     "signatures": [
         {
             "file": "signer.php",
-            "hash": "07de31c72b30a402e87cb95e153cc5ed1ab7eb91"
+            "hash": "2ac4a45918e0ccc840c6e57de5f117a4d357e14c"
         },
         {
             "file": "composer.lock",
-            "hash": "93549ff8c1aa426cab39b4731a5ed908ab4fad48"
+            "hash": "cbce6d29063b583b8347ec361f362eca239fa2c0"
+        },
+        {
+            "file": "publickey.txt",
+            "hash": "9d193af751aff96e49ba1cdfd26d3280d250e8b5"
         },
         {
             "file": "README.md",
             "hash": "0d2f90c9025829f95e360ef9ed71ed4224f40112"
         },
         {
+            "file": "secretkey.txt",
+            "hash": "80a83d4b8f383cf5eaec7d312aad75b01d5009cc"
+        },
+        {
             "file": "applications\/SignedAutoupdate.php",
-            "hash": "e1af66bf48381f15f57a5dd753440595f6c8c2e4"
+            "hash": "ee03ef618007ae83228cca2275219a6b043f0918"
         },
         {
             "file": "docker-compose.yml",
@@ -24,11 +32,15 @@
         },
         {
             "file": "commands\/SignedAutoupdate\/Signer.php",
-            "hash": "91df8de788c318a40eab13f5b621558fec3fbea0"
+            "hash": "d88bfef9a24018491f09a274a8ee69e3bb632138"
+        },
+        {
+            "file": "commands\/SignedAutoupdate\/Generator.php",
+            "hash": "a19efb29451ccf92b437462b5fd7ae17ffe29835"
         },
         {
             "file": "composer.json",
-            "hash": "21d4fb543dd1bb5d34b960b9ad56adaef2c22a74"
+            "hash": "a2e769c236ee2fd5fdebb5d824fc6644e19663cb"
         },
         {
             "file": "vendor\/autoload.php",
@@ -56,7 +68,7 @@
         },
         {
             "file": "vendor\/composer\/autoload_static.php",
-            "hash": "5d689dbd7e2f1cd4f446ab29dfb7956cec39b62a"
+            "hash": "109714808dbbaaacf1c708bf8f70de246de5f9f5"
         },
         {
             "file": "vendor\/composer\/autoload_real.php",
@@ -64,11 +76,467 @@
         },
         {
             "file": "vendor\/composer\/installed.json",
-            "hash": "37e9c432a533cc19840408458ccc2a622afc44dc"
+            "hash": "e688f6a07625fbc2685c27ff936a1d3c5192c004"
         },
         {
             "file": "vendor\/composer\/autoload_files.php",
-            "hash": "0d8e243ec497f9b2f27bc161116c915510fce195"
+            "hash": "df8781563f58ed0084f6033a2f0ac5bf9b9938df"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/LICENSE",
+            "hash": "89ea22f8eed658271c62456bacc37b24a77173a4"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/dist\/random_compat.phar.pubkey",
+            "hash": "04b5c73ad5366ea43da98a168a8bf3a31b702834"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/dist\/random_compat.phar.pubkey.asc",
+            "hash": "5505ea6b41344db06bad92ae6e8031848992ab60"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/other\/build_phar.php",
+            "hash": "4263be491cf6a8aa941af6c3bdd4e84604bdb28d"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/build-phar.sh",
+            "hash": "fcd2bd9fc5a4eab0d5c49d9b066490fa503f8eff"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/psalm-autoload.php",
+            "hash": "8ad4f771f71c87c692e11aae0b68ded4c9d4dfb6"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/lib\/random_bytes_libsodium.php",
+            "hash": "c0c4d526fa2403ed6e7a3082849c196a01a83240"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/lib\/random_bytes_mcrypt.php",
+            "hash": "cba53af74b8ac82ba7c96511738f045f0501a3aa"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/lib\/random_bytes_dev_urandom.php",
+            "hash": "3393ac55caf51de419a3ff3119258a7d7d9f434d"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/lib\/byte_safe_strings.php",
+            "hash": "5d3df157472625aea8f6d0ddbc7532e68997041b"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/lib\/random_bytes_libsodium_legacy.php",
+            "hash": "59432103099ac8440f169c0478d7313faa6e560c"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/lib\/random.php",
+            "hash": "83f41387b29273eb40aefd1135e9e361c867631d"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/lib\/random_bytes_com_dotnet.php",
+            "hash": "eaef2e61cbf9f4456ec1edcb54a123e09e7b047e"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/lib\/cast_to_int.php",
+            "hash": "98f0cd57ae8a6d251730a10047284d385c32ff5e"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/lib\/random_int.php",
+            "hash": "3c24955f29fc98e34ccfbb7fd7d2e3cc631d21a5"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/lib\/error_polyfill.php",
+            "hash": "982406195cf494bf3a345004a5a60d395a19addf"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/composer.json",
+            "hash": "6a34a7f76cc1d474c45f501c86a70f2925a607c9"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/psalm.xml",
+            "hash": "f90e07b24dcea0608d033cf4757b1e4ebf269e38"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/autoload.php",
+            "hash": "c48f4a037b3c805d0a1d139c70d6b0266267bf97"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/autoload-pedantic.php",
+            "hash": "885a90b5af0016edc21ffe729ee24bb992e2726e"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Crypto.php",
+            "hash": "6f94ad7220a24cf1dac416bd5c993c6aa072965d"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/HChaCha20.php",
+            "hash": "25ab80abded4b1d15ec42ae6034543c186195a1c"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Poly1305.php",
+            "hash": "f8322be6649ad01b37308e1698e655168ae5032f"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/ChaCha20\/Ctx.php",
+            "hash": "a5ff12a8a2e2b034a92b45e1cf2eae6e71db1db3"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/ChaCha20\/IetfCtx.php",
+            "hash": "2bd1e9fd1969dbc212daf0acb1e1d9e51db295d2"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/HSalsa20.php",
+            "hash": "358fcf0b4c478f55496d3adbd52a24a4fa59c34d"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/XChaCha20.php",
+            "hash": "27f45a2523c207b747cc11a2512d203e8ce407be"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/X25519.php",
+            "hash": "b1a02f17a53fb144cd24402471dcd4b969606bfc"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/ChaCha20.php",
+            "hash": "1fd8e42e05eea3e5804f6410c1930752346ca835"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Curve25519.php",
+            "hash": "faf132182e591459dfa2b4b2c656834546800070"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Salsa20.php",
+            "hash": "8818f34218bbece9ea42d6b4a1eb3d647f7146cf"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/BLAKE2b.php",
+            "hash": "f4ca336e32d1728f06f6175fccfa1cd472806414"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Poly1305\/State.php",
+            "hash": "9cb3c71e336476e433db35efbcae7bdecf8f6de7"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/SipHash.php",
+            "hash": "92e0a01f26a88e2f7618c14d9dd38964004e3f58"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Xsalsa20.php",
+            "hash": "c4993c8091f6f7140059a25f97c11b26a36f191d"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Ed25519.php",
+            "hash": "34368cd0690aafdc9f7dddda6befdec9e16aa700"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Util.php",
+            "hash": "aaac0d226d1b3df8e103f15197e18432160c8e02"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Curve25519\/H.php",
+            "hash": "6dfbb68e1103e68d45558dc4f64723d4c95918a9"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Curve25519\/Fe.php",
+            "hash": "7b663c000c872ee36075eb7adc97a983db40ae34"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Curve25519\/Ge\/Precomp.php",
+            "hash": "29a8cf55cc8cfd5e1ed1462c7c73a150899f15af"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Curve25519\/Ge\/P3.php",
+            "hash": "dd3893ff58b88504ede8c1cde236696cd29d6ae9"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Curve25519\/Ge\/P2.php",
+            "hash": "67027d30ea6c06567b0c8d45a9eaa670934587c9"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Curve25519\/Ge\/Cached.php",
+            "hash": "6f02b55ab8a76e4238cc63fac55f06be5ccd9af9"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Curve25519\/Ge\/P1p1.php",
+            "hash": "da7cf65c1d12a138695c100dfe6f094c2add6cc6"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/File.php",
+            "hash": "31cb3d72a273e15d50469c3d2b41322ef56b3ae7"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Compat.php",
+            "hash": "848f7f48249cd553f31e5cc822cb8a01cfc200e2"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/LICENSE",
+            "hash": "e01de837ea9351c6d93ca617247a9e6200ae4c29"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/dist\/box.json",
+            "hash": "26fae06ee21fd83268e6632fc3c621764447b2fe"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/dist\/Makefile",
+            "hash": "5370dda3bd25046beb13def0306b93edd1496665"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/autoload-fast.php",
+            "hash": "64cb65e7226d4c7ee330c2171647fbf828a35d73"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/build-phar.sh",
+            "hash": "0ca8f79d7f0740d416bb17cf0d614ae55099ca35"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/README.md",
+            "hash": "ed6d7b47fa03fe1c7d3392bb1eb62247beb45471"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/appveyor.yml",
+            "hash": "fe7a2a8b4bbf4d09c1827aff798eba3b04519b90"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/lib\/sodium_compat.php",
+            "hash": "99a69c5fece6bdbdac2175ead90b3e94dc6159c9"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/lib\/php72compat.php",
+            "hash": "ded98871fd1216f5e2fa5be6bd58d54ea8430cb5"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/lib\/constants.php",
+            "hash": "1aa56aaadb790c0d34a934900b1eafd1986ab9df"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/lib\/namespaced.php",
+            "hash": "9d903f752ec325f154770a1bbaebe7f59471c2de"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/phpunit.xml.dist",
+            "hash": "1b478dd1004ef3c2ec50f328f658c32f8b02d470"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/composer.json",
+            "hash": "c128c1198f2126cca82729d3a7b726a6452bfc02"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Crypto.php",
+            "hash": "daf4cd91cdce7c691c9a0330e87f8cdf78d113e1"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/HChaCha20.php",
+            "hash": "a2e1dedefc80f5bc5372d9971b7db634426e6ece"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Int32.php",
+            "hash": "6dcefe97b7f7ad7f43000ac94e5ca28ec77e8f13"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Poly1305.php",
+            "hash": "479fcb6840a1b4f8105f1b55d3d4e84e01e08f72"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/ChaCha20\/Ctx.php",
+            "hash": "11f8153347a5f90732caee94f4d111c7b08cfe34"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/ChaCha20\/IetfCtx.php",
+            "hash": "30fd5619fa1d6f96794f7ba68103a994b404dccf"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/HSalsa20.php",
+            "hash": "80ff5e86ac67ed5edb8f4a9ada69c6531c07ef3c"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/XChaCha20.php",
+            "hash": "569c42ebf910519b4396965fbf076993759bffe9"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/X25519.php",
+            "hash": "5651bad8fd52a49863ccf141a69dc31b60b10714"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/ChaCha20.php",
+            "hash": "d10cd9539dc66dd752405f7bb1cd0421978cbfcb"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Curve25519.php",
+            "hash": "3cd22d8e30aa80b2c7c40652f268f75970d75e27"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Salsa20.php",
+            "hash": "9006b949e28e971a4fdedcbb796c5dda22bf19e8"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/BLAKE2b.php",
+            "hash": "931f89cc46fbe418845d6352760b4353a69d88b9"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Poly1305\/State.php",
+            "hash": "f28183b1cf8cc75768b234617aaef3766b8b0262"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/SipHash.php",
+            "hash": "9ecd8ee0ce6b9744ac99a01f5c788ab6f0558455"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/XSalsa20.php",
+            "hash": "294ee488ab6fb167ef0de893da8250b9f619998a"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Ed25519.php",
+            "hash": "19b3fd76d4dbe9a225ab9f5e7afcdcd0cc2ab945"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Util.php",
+            "hash": "9a37549bb34ed32fe0edb7c20c84ca6333ef4d40"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Int64.php",
+            "hash": "57587e913f7a16c854cfb6e9c57907aa820f1868"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Curve25519\/H.php",
+            "hash": "7f044c8b6c134b3603f6a14d80da30923e454916"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Curve25519\/Fe.php",
+            "hash": "1b90a0034893ed43088e3e6a7d4d92d667970f6a"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Curve25519\/README.md",
+            "hash": "3d7f553479f34d4cbc2898845e7f034ef7f52031"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Curve25519\/Ge\/Precomp.php",
+            "hash": "f4a7d65a95f40c4b8069aad3e816e38a25b8588f"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Curve25519\/Ge\/P3.php",
+            "hash": "0b46df25584f0efcdf7e187aaa243a87bf435954"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Curve25519\/Ge\/P2.php",
+            "hash": "5afbf311a96ef3008020fb08c9c084bbff816b03"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Curve25519\/Ge\/Cached.php",
+            "hash": "01f39892b9f291b2a613d2e087227a14125146d8"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Curve25519\/Ge\/P1p1.php",
+            "hash": "0b2580fa157e62dd3c66168c8454375196f02cff"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/HChaCha20.php",
+            "hash": "c296b90df1ecaf475ca157659086f04d8ffcd511"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Poly1305.php",
+            "hash": "9fd48d4570084638883a83423118cc6ea648916e"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/ChaCha20\/Ctx.php",
+            "hash": "1cccaa0361402a5e42f8e0fc93676441d423af75"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/ChaCha20\/IetfCtx.php",
+            "hash": "f2ed3eb7791ae30e42d1723ba35a26e0b5e475c8"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/HSalsa20.php",
+            "hash": "c70944fc75c2d968ed7e4a83f33463b34b7ebc91"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/XChaCha20.php",
+            "hash": "201cfa31b2062f4367c15f953e75a6da08bf995b"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/X25519.php",
+            "hash": "02e69109be21715dceabceee002368b37d5f554f"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/ChaCha20.php",
+            "hash": "5c425e8ef04d00981d9b6fe075165cd4373f0ee1"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Curve25519.php",
+            "hash": "b22725006c7fa1f387bb3067e22571859a8728ac"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Salsa20.php",
+            "hash": "086c291530405ff59ea51d8c7df7e14c77644e40"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/BLAKE2b.php",
+            "hash": "fdd511e6442ea9b1d21c61cc2c6803cd39b201f9"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Poly1305\/State.php",
+            "hash": "312566ca6914480f9539033fb37d120b780b507d"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/SipHash.php",
+            "hash": "c0ddf02ad2a50edb4355e765d28088cd91fdfe63"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/XSalsa20.php",
+            "hash": "d8c43941df129334543e4960fcac84c52f505d3f"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Ed25519.php",
+            "hash": "4cc3c2cf5c9af83bcc9e36b3069b3cf236a1c807"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Util.php",
+            "hash": "3bfd1bc820242d4699617fe34931191b0f70acce"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Curve25519\/H.php",
+            "hash": "eaf34a5d8f075c35e0b2a407c4b6bd2a882314ee"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Curve25519\/Fe.php",
+            "hash": "cd902d74ecd6c27a99b716929dfed783bfbb9f48"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Curve25519\/README.md",
+            "hash": "3d7f553479f34d4cbc2898845e7f034ef7f52031"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Curve25519\/Ge\/Precomp.php",
+            "hash": "2bf3492e550f8e2a599383a0849c02bf391a2bdd"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Curve25519\/Ge\/P3.php",
+            "hash": "d2cd0f4ebe7512499005030ca950de5f44d23dd5"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Curve25519\/Ge\/P2.php",
+            "hash": "53575bebfbb8afb1a983b7ee4457977b67755a02"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Curve25519\/Ge\/Cached.php",
+            "hash": "40d39870d8237ff42753ac9c9ff10e85c1f83252"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Curve25519\/Ge\/P1p1.php",
+            "hash": "8f9b81dd8f0c0fe45f8021e972d8d6171c4abdd0"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/File.php",
+            "hash": "042e567e2275ffb02a257b060122cded89b9d532"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/SodiumException.php",
+            "hash": "c9f09d6ce505b11c308970e2746b6f4dd496a86d"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Crypto32.php",
+            "hash": "b949d9401054b392d4b1ca34a04a8d42154005f5"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Compat.php",
+            "hash": "0bff33676e3e181a4ca960927473b56bc83711ec"
         },
         {
             "file": "vendor\/symfony\/filesystem\/LICENSE",

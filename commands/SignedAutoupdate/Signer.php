@@ -6,7 +6,6 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Console\Helper\Table;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Filesystem\Exception\IOExceptionInterface;
@@ -22,10 +21,11 @@ class Signer extends Command
     protected function configure()
     {
         $this
-            ->setName('sign')
+            ->setName('signer:sign')
             ->setDescription('Get someones infos')
             ->setDefinition(array())
             ->addArgument('path', InputArgument::REQUIRED, 'the path you want to check')
+            ->addArgument('key', InputArgument::REQUIRED, 'the path to the secret key')
             ->addOption('algo', 'a', InputOption::VALUE_OPTIONAL, 'The algorithm', 'sha1');
     }
 
@@ -39,6 +39,7 @@ class Signer extends Command
     {
         // is http fallback enabled
         $path = $input->getArgument("path");
+        $key = $input->getArgument("key");
         $algo = $input->getOption("algo");
 
         $finder = new Finder();
@@ -59,7 +60,18 @@ class Signer extends Command
         $fileSystem = new Filesystem();
 
         $fileSystem->mkdir($path . '/.well-known/');
-        $fileSystem->dumpFile($path . '/.well-known/signatures.json', json_encode($signation, JSON_PRETTY_PRINT));
+
+        $jsonData = json_encode($signation, JSON_PRETTY_PRINT);
+
+        $fileSystem->dumpFile($path . '/.well-known/list.json', $jsonData);
+
+        $secretKey = file_get_contents($key);
+        $secretKey = \ParagonIE_Sodium_Compat::hex2bin($secretKey);
+
+        $signature = \ParagonIE_Sodium_Compat::crypto_sign_detached($jsonData, $secretKey);
+        $signature = \ParagonIE_Sodium_Compat::bin2hex($signature);
+
+        $fileSystem->dumpFile($path . '/.well-known/signature.txt', $signature);
     }
 
     /**
