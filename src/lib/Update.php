@@ -144,7 +144,7 @@ class Update
      */
     public function cleanup()
     {
-        unlink($this->tempDir);
+        #unlink($this->tempDir);
     }
 
 
@@ -155,10 +155,11 @@ class Update
      */
     public function check_integrety($signed_file_list)
     {
-        $signatures = json_decode($signed_file_list);
+        $signatures = json_decode($signed_file_list,true);
         $this->setAlgorithm($signatures['algorithm']);
 
         if ($this->countFiles($this->tempDir) !== count($signatures['signatures'])){
+            echo $this->countFiles($this->tempDir).'---'.count($signatures['signatures']);
             $this->failed_count();
         }
 
@@ -179,7 +180,7 @@ class Update
         $dir = opendir($dir);
         $i = 0;
         while (false !== ($file = readdir($dir))) {
-            if (!in_array($file, array('.', '..')) && !is_dir($file) ){ $i++;}
+            if (!in_array($file, array('.', '..','.well-known','update.zip')) && !is_dir($file) ){ $i++;}
         }
         return $i;
     }
@@ -192,7 +193,7 @@ class Update
      */
     public function compare($file,$signature)
     {
-        if(hash_file($this->algorithm,$file) !== $signature){
+        if(hash_file($this->algorithm,$this->tempDir.'/'.$file) !== $signature){
             return $this->failed_signature();
         }
         return true;
@@ -206,10 +207,14 @@ class Update
     public function ProcessUpdate($url)
     {
         $zipfilePath = $this->download($url);
-        $this->extract($zipfilePath,$this->tempDir);
+        if (!is_dir($this->tempDir)) {
+            mkdir($this->tempDir);
+        }
+        #$this->extract($zipfilePath,$this->tempDir);
         $verificationFile = $this->verify();
         $this->check_integrety($verificationFile);
-        $this->extract($zipfilePath,$this->updateDir);
+        #$this->extract($zipfilePath,$this->updateDir);
+        echo 'Update successful';
         $this->cleanup();
         return true;
     }
