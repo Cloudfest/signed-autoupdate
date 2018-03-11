@@ -1,3 +1,2 @@
 vendor
-/secretkey.txt
-/publickey.txt
+.DS_Store
