@@ -1,0 +1,2086 @@
+{
+    "version": "1.0.0",
+    "algorithm": "sha1",
+    "signatures": [
+        {
+            "file": "signer.php",
+            "hash": "6281998e598b79d7de67ec45acede91bed5ee8c7"
+        },
+        {
+            "file": "composer.lock",
+            "hash": "cbce6d29063b583b8347ec361f362eca239fa2c0"
+        },
+        {
+            "file": "README.md",
+            "hash": "0d2f90c9025829f95e360ef9ed71ed4224f40112"
+        },
+        {
+            "file": "applications\/SignedAutoupdate.php",
+            "hash": "ee03ef618007ae83228cca2275219a6b043f0918"
+        },
+        {
+            "file": "docker-compose.yml",
+            "hash": "55c8782e0050afad6b9faf66a47590633fce181f"
+        },
+        {
+            "file": "commands\/SignedAutoupdate\/Signer.php",
+            "hash": "7294e2b53dcb973bfb38a1aa16b1bdd5c4f658ab"
+        },
+        {
+            "file": "commands\/SignedAutoupdate\/Verifier.php",
+            "hash": "f6319dce01b119756d7d1fd12f8dd6c2795c2bd3"
+        },
+        {
+            "file": "commands\/SignedAutoupdate\/Generator.php",
+            "hash": "a19efb29451ccf92b437462b5fd7ae17ffe29835"
+        },
+        {
+            "file": "composer.json",
+            "hash": "a2e769c236ee2fd5fdebb5d824fc6644e19663cb"
+        },
+        {
+            "file": "vendor\/autoload.php",
+            "hash": "88884e78877f50401e9aaa3ae640a4eae30da72c"
+        },
+        {
+            "file": "vendor\/composer\/autoload_namespaces.php",
+            "hash": "3796792e1767d43a67de9843543c72280a7a7a1e"
+        },
+        {
+            "file": "vendor\/composer\/LICENSE",
+            "hash": "38e062192cc23823bb2a279cb28c8a176d439b3b"
+        },
+        {
+            "file": "vendor\/composer\/ClassLoader.php",
+            "hash": "3e056b23d4116e6191838864c9e5a781c156898d"
+        },
+        {
+            "file": "vendor\/composer\/autoload_psr4.php",
+            "hash": "2517fffb88e855258cb7f6d24d64211e32db7cd9"
+        },
+        {
+            "file": "vendor\/composer\/autoload_classmap.php",
+            "hash": "18ba25b0d28f23bbbff9bd1fe224768654e18881"
+        },
+        {
+            "file": "vendor\/composer\/autoload_static.php",
+            "hash": "109714808dbbaaacf1c708bf8f70de246de5f9f5"
+        },
+        {
+            "file": "vendor\/composer\/autoload_real.php",
+            "hash": "68e4a3f7ce5d754a0afe6c931174a6168711d022"
+        },
+        {
+            "file": "vendor\/composer\/installed.json",
+            "hash": "e688f6a07625fbc2685c27ff936a1d3c5192c004"
+        },
+        {
+            "file": "vendor\/composer\/autoload_files.php",
+            "hash": "df8781563f58ed0084f6033a2f0ac5bf9b9938df"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/LICENSE",
+            "hash": "89ea22f8eed658271c62456bacc37b24a77173a4"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/dist\/random_compat.phar.pubkey",
+            "hash": "04b5c73ad5366ea43da98a168a8bf3a31b702834"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/dist\/random_compat.phar.pubkey.asc",
+            "hash": "5505ea6b41344db06bad92ae6e8031848992ab60"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/other\/build_phar.php",
+            "hash": "4263be491cf6a8aa941af6c3bdd4e84604bdb28d"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/build-phar.sh",
+            "hash": "fcd2bd9fc5a4eab0d5c49d9b066490fa503f8eff"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/psalm-autoload.php",
+            "hash": "8ad4f771f71c87c692e11aae0b68ded4c9d4dfb6"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/lib\/random_bytes_libsodium.php",
+            "hash": "c0c4d526fa2403ed6e7a3082849c196a01a83240"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/lib\/random_bytes_mcrypt.php",
+            "hash": "cba53af74b8ac82ba7c96511738f045f0501a3aa"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/lib\/random_bytes_dev_urandom.php",
+            "hash": "3393ac55caf51de419a3ff3119258a7d7d9f434d"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/lib\/byte_safe_strings.php",
+            "hash": "5d3df157472625aea8f6d0ddbc7532e68997041b"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/lib\/random_bytes_libsodium_legacy.php",
+            "hash": "59432103099ac8440f169c0478d7313faa6e560c"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/lib\/random.php",
+            "hash": "83f41387b29273eb40aefd1135e9e361c867631d"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/lib\/random_bytes_com_dotnet.php",
+            "hash": "eaef2e61cbf9f4456ec1edcb54a123e09e7b047e"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/lib\/cast_to_int.php",
+            "hash": "98f0cd57ae8a6d251730a10047284d385c32ff5e"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/lib\/random_int.php",
+            "hash": "3c24955f29fc98e34ccfbb7fd7d2e3cc631d21a5"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/lib\/error_polyfill.php",
+            "hash": "982406195cf494bf3a345004a5a60d395a19addf"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/composer.json",
+            "hash": "6a34a7f76cc1d474c45f501c86a70f2925a607c9"
+        },
+        {
+            "file": "vendor\/paragonie\/random_compat\/psalm.xml",
+            "hash": "f90e07b24dcea0608d033cf4757b1e4ebf269e38"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/autoload.php",
+            "hash": "c48f4a037b3c805d0a1d139c70d6b0266267bf97"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/autoload-pedantic.php",
+            "hash": "885a90b5af0016edc21ffe729ee24bb992e2726e"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Crypto.php",
+            "hash": "6f94ad7220a24cf1dac416bd5c993c6aa072965d"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/HChaCha20.php",
+            "hash": "25ab80abded4b1d15ec42ae6034543c186195a1c"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Poly1305.php",
+            "hash": "f8322be6649ad01b37308e1698e655168ae5032f"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/ChaCha20\/Ctx.php",
+            "hash": "a5ff12a8a2e2b034a92b45e1cf2eae6e71db1db3"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/ChaCha20\/IetfCtx.php",
+            "hash": "2bd1e9fd1969dbc212daf0acb1e1d9e51db295d2"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/HSalsa20.php",
+            "hash": "358fcf0b4c478f55496d3adbd52a24a4fa59c34d"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/XChaCha20.php",
+            "hash": "27f45a2523c207b747cc11a2512d203e8ce407be"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/X25519.php",
+            "hash": "b1a02f17a53fb144cd24402471dcd4b969606bfc"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/ChaCha20.php",
+            "hash": "1fd8e42e05eea3e5804f6410c1930752346ca835"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Curve25519.php",
+            "hash": "faf132182e591459dfa2b4b2c656834546800070"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Salsa20.php",
+            "hash": "8818f34218bbece9ea42d6b4a1eb3d647f7146cf"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/BLAKE2b.php",
+            "hash": "f4ca336e32d1728f06f6175fccfa1cd472806414"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Poly1305\/State.php",
+            "hash": "9cb3c71e336476e433db35efbcae7bdecf8f6de7"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/SipHash.php",
+            "hash": "92e0a01f26a88e2f7618c14d9dd38964004e3f58"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Xsalsa20.php",
+            "hash": "c4993c8091f6f7140059a25f97c11b26a36f191d"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Ed25519.php",
+            "hash": "34368cd0690aafdc9f7dddda6befdec9e16aa700"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Util.php",
+            "hash": "aaac0d226d1b3df8e103f15197e18432160c8e02"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Curve25519\/H.php",
+            "hash": "6dfbb68e1103e68d45558dc4f64723d4c95918a9"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Curve25519\/Fe.php",
+            "hash": "7b663c000c872ee36075eb7adc97a983db40ae34"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Curve25519\/Ge\/Precomp.php",
+            "hash": "29a8cf55cc8cfd5e1ed1462c7c73a150899f15af"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Curve25519\/Ge\/P3.php",
+            "hash": "dd3893ff58b88504ede8c1cde236696cd29d6ae9"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Curve25519\/Ge\/P2.php",
+            "hash": "67027d30ea6c06567b0c8d45a9eaa670934587c9"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Curve25519\/Ge\/Cached.php",
+            "hash": "6f02b55ab8a76e4238cc63fac55f06be5ccd9af9"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Core\/Curve25519\/Ge\/P1p1.php",
+            "hash": "da7cf65c1d12a138695c100dfe6f094c2add6cc6"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/File.php",
+            "hash": "31cb3d72a273e15d50469c3d2b41322ef56b3ae7"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/namespaced\/Compat.php",
+            "hash": "848f7f48249cd553f31e5cc822cb8a01cfc200e2"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/LICENSE",
+            "hash": "e01de837ea9351c6d93ca617247a9e6200ae4c29"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/dist\/box.json",
+            "hash": "26fae06ee21fd83268e6632fc3c621764447b2fe"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/dist\/Makefile",
+            "hash": "5370dda3bd25046beb13def0306b93edd1496665"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/autoload-fast.php",
+            "hash": "64cb65e7226d4c7ee330c2171647fbf828a35d73"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/build-phar.sh",
+            "hash": "0ca8f79d7f0740d416bb17cf0d614ae55099ca35"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/README.md",
+            "hash": "ed6d7b47fa03fe1c7d3392bb1eb62247beb45471"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/appveyor.yml",
+            "hash": "fe7a2a8b4bbf4d09c1827aff798eba3b04519b90"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/lib\/sodium_compat.php",
+            "hash": "99a69c5fece6bdbdac2175ead90b3e94dc6159c9"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/lib\/php72compat.php",
+            "hash": "ded98871fd1216f5e2fa5be6bd58d54ea8430cb5"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/lib\/constants.php",
+            "hash": "1aa56aaadb790c0d34a934900b1eafd1986ab9df"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/lib\/namespaced.php",
+            "hash": "9d903f752ec325f154770a1bbaebe7f59471c2de"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/phpunit.xml.dist",
+            "hash": "1b478dd1004ef3c2ec50f328f658c32f8b02d470"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/composer.json",
+            "hash": "c128c1198f2126cca82729d3a7b726a6452bfc02"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Crypto.php",
+            "hash": "daf4cd91cdce7c691c9a0330e87f8cdf78d113e1"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/HChaCha20.php",
+            "hash": "a2e1dedefc80f5bc5372d9971b7db634426e6ece"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Int32.php",
+            "hash": "6dcefe97b7f7ad7f43000ac94e5ca28ec77e8f13"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Poly1305.php",
+            "hash": "479fcb6840a1b4f8105f1b55d3d4e84e01e08f72"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/ChaCha20\/Ctx.php",
+            "hash": "11f8153347a5f90732caee94f4d111c7b08cfe34"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/ChaCha20\/IetfCtx.php",
+            "hash": "30fd5619fa1d6f96794f7ba68103a994b404dccf"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/HSalsa20.php",
+            "hash": "80ff5e86ac67ed5edb8f4a9ada69c6531c07ef3c"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/XChaCha20.php",
+            "hash": "569c42ebf910519b4396965fbf076993759bffe9"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/X25519.php",
+            "hash": "5651bad8fd52a49863ccf141a69dc31b60b10714"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/ChaCha20.php",
+            "hash": "d10cd9539dc66dd752405f7bb1cd0421978cbfcb"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Curve25519.php",
+            "hash": "3cd22d8e30aa80b2c7c40652f268f75970d75e27"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Salsa20.php",
+            "hash": "9006b949e28e971a4fdedcbb796c5dda22bf19e8"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/BLAKE2b.php",
+            "hash": "931f89cc46fbe418845d6352760b4353a69d88b9"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Poly1305\/State.php",
+            "hash": "f28183b1cf8cc75768b234617aaef3766b8b0262"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/SipHash.php",
+            "hash": "9ecd8ee0ce6b9744ac99a01f5c788ab6f0558455"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/XSalsa20.php",
+            "hash": "294ee488ab6fb167ef0de893da8250b9f619998a"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Ed25519.php",
+            "hash": "19b3fd76d4dbe9a225ab9f5e7afcdcd0cc2ab945"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Util.php",
+            "hash": "9a37549bb34ed32fe0edb7c20c84ca6333ef4d40"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Int64.php",
+            "hash": "57587e913f7a16c854cfb6e9c57907aa820f1868"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Curve25519\/H.php",
+            "hash": "7f044c8b6c134b3603f6a14d80da30923e454916"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Curve25519\/Fe.php",
+            "hash": "1b90a0034893ed43088e3e6a7d4d92d667970f6a"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Curve25519\/README.md",
+            "hash": "3d7f553479f34d4cbc2898845e7f034ef7f52031"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Curve25519\/Ge\/Precomp.php",
+            "hash": "f4a7d65a95f40c4b8069aad3e816e38a25b8588f"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Curve25519\/Ge\/P3.php",
+            "hash": "0b46df25584f0efcdf7e187aaa243a87bf435954"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Curve25519\/Ge\/P2.php",
+            "hash": "5afbf311a96ef3008020fb08c9c084bbff816b03"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Curve25519\/Ge\/Cached.php",
+            "hash": "01f39892b9f291b2a613d2e087227a14125146d8"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core32\/Curve25519\/Ge\/P1p1.php",
+            "hash": "0b2580fa157e62dd3c66168c8454375196f02cff"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/HChaCha20.php",
+            "hash": "c296b90df1ecaf475ca157659086f04d8ffcd511"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Poly1305.php",
+            "hash": "9fd48d4570084638883a83423118cc6ea648916e"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/ChaCha20\/Ctx.php",
+            "hash": "1cccaa0361402a5e42f8e0fc93676441d423af75"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/ChaCha20\/IetfCtx.php",
+            "hash": "f2ed3eb7791ae30e42d1723ba35a26e0b5e475c8"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/HSalsa20.php",
+            "hash": "c70944fc75c2d968ed7e4a83f33463b34b7ebc91"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/XChaCha20.php",
+            "hash": "201cfa31b2062f4367c15f953e75a6da08bf995b"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/X25519.php",
+            "hash": "02e69109be21715dceabceee002368b37d5f554f"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/ChaCha20.php",
+            "hash": "5c425e8ef04d00981d9b6fe075165cd4373f0ee1"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Curve25519.php",
+            "hash": "b22725006c7fa1f387bb3067e22571859a8728ac"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Salsa20.php",
+            "hash": "086c291530405ff59ea51d8c7df7e14c77644e40"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/BLAKE2b.php",
+            "hash": "fdd511e6442ea9b1d21c61cc2c6803cd39b201f9"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Poly1305\/State.php",
+            "hash": "312566ca6914480f9539033fb37d120b780b507d"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/SipHash.php",
+            "hash": "c0ddf02ad2a50edb4355e765d28088cd91fdfe63"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/XSalsa20.php",
+            "hash": "d8c43941df129334543e4960fcac84c52f505d3f"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Ed25519.php",
+            "hash": "4cc3c2cf5c9af83bcc9e36b3069b3cf236a1c807"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Util.php",
+            "hash": "3bfd1bc820242d4699617fe34931191b0f70acce"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Curve25519\/H.php",
+            "hash": "eaf34a5d8f075c35e0b2a407c4b6bd2a882314ee"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Curve25519\/Fe.php",
+            "hash": "cd902d74ecd6c27a99b716929dfed783bfbb9f48"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Curve25519\/README.md",
+            "hash": "3d7f553479f34d4cbc2898845e7f034ef7f52031"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Curve25519\/Ge\/Precomp.php",
+            "hash": "2bf3492e550f8e2a599383a0849c02bf391a2bdd"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Curve25519\/Ge\/P3.php",
+            "hash": "d2cd0f4ebe7512499005030ca950de5f44d23dd5"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Curve25519\/Ge\/P2.php",
+            "hash": "53575bebfbb8afb1a983b7ee4457977b67755a02"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Curve25519\/Ge\/Cached.php",
+            "hash": "40d39870d8237ff42753ac9c9ff10e85c1f83252"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Core\/Curve25519\/Ge\/P1p1.php",
+            "hash": "8f9b81dd8f0c0fe45f8021e972d8d6171c4abdd0"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/File.php",
+            "hash": "042e567e2275ffb02a257b060122cded89b9d532"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/SodiumException.php",
+            "hash": "c9f09d6ce505b11c308970e2746b6f4dd496a86d"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Crypto32.php",
+            "hash": "b949d9401054b392d4b1ca34a04a8d42154005f5"
+        },
+        {
+            "file": "vendor\/paragonie\/sodium_compat\/src\/Compat.php",
+            "hash": "0bff33676e3e181a4ca960927473b56bc83711ec"
+        },
+        {
+            "file": "vendor\/symfony\/filesystem\/LICENSE",
+            "hash": "b403a7dd46e345a22859f05703f153301b311ba5"
+        },
+        {
+            "file": "vendor\/symfony\/filesystem\/CHANGELOG.md",
+            "hash": "03473ff3762e600e771baac52c035109d3e37b77"
+        },
+        {
+            "file": "vendor\/symfony\/filesystem\/Filesystem.php",
+            "hash": "1b3aa166e34f7d0a76567dc97d36d138b7416798"
+        },
+        {
+            "file": "vendor\/symfony\/filesystem\/Tests\/FilesystemTestCase.php",
+            "hash": "aafd5498cddfa0e38a45ae7d85b799ef6e533db7"
+        },
+        {
+            "file": "vendor\/symfony\/filesystem\/Tests\/ExceptionTest.php",
+            "hash": "2eb95b92510b8f8413a805aba84f21d5ca4d4f8f"
+        },
+        {
+            "file": "vendor\/symfony\/filesystem\/Tests\/Fixtures\/MockStream\/MockStream.php",
+            "hash": "2c0af72d4e2742c119e26fd3343f9285d01c12eb"
+        },
+        {
+            "file": "vendor\/symfony\/filesystem\/Tests\/FilesystemTest.php",
+            "hash": "a9b821f59fb1a093d1cd36916116496606e41da2"
+        },
+        {
+            "file": "vendor\/symfony\/filesystem\/README.md",
+            "hash": "d10e36c26c33fc5dde57661e9290f8b75ebea726"
+        },
+        {
+            "file": "vendor\/symfony\/filesystem\/phpunit.xml.dist",
+            "hash": "3c328b90b92e93e173ebc88a73bd7fd01dbb8f70"
+        },
+        {
+            "file": "vendor\/symfony\/filesystem\/Exception\/IOExceptionInterface.php",
+            "hash": "d9650fbcea82e5cf22c76de73265b379ebfc12b3"
+        },
+        {
+            "file": "vendor\/symfony\/filesystem\/Exception\/ExceptionInterface.php",
+            "hash": "f4d76941b20da794443c463f3d438e2764d6cbc4"
+        },
+        {
+            "file": "vendor\/symfony\/filesystem\/Exception\/IOException.php",
+            "hash": "b3713df5b7cba074b0e162dfef63384f3af0c7d8"
+        },
+        {
+            "file": "vendor\/symfony\/filesystem\/Exception\/InvalidArgumentException.php",
+            "hash": "39237095c7ec35ba41a69db8f7f38999727fad24"
+        },
+        {
+            "file": "vendor\/symfony\/filesystem\/Exception\/FileNotFoundException.php",
+            "hash": "8d3797f5c0a95b230ab443fccdc69e893def8763"
+        },
+        {
+            "file": "vendor\/symfony\/filesystem\/composer.json",
+            "hash": "945aaa0841ddb326078cd8dc403589b3ba38302f"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/SplFileInfo.php",
+            "hash": "cd4706de9877c0550b5b20009ea326f249cabf38"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Comparator\/NumberComparator.php",
+            "hash": "a4fb09276e634a32bb300521e199b2ab1aefc688"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Comparator\/Comparator.php",
+            "hash": "48afb91896ca2dc74a586d5cfd07982facdd62e2"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Comparator\/DateComparator.php",
+            "hash": "4dff665eee7680bd0bcce47e189654b8d5780b99"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Finder.php",
+            "hash": "e271ca7d65169d9a398a44bb33c3c7b8e4d0787f"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/LICENSE",
+            "hash": "b403a7dd46e345a22859f05703f153301b311ba5"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/CHANGELOG.md",
+            "hash": "2626cd30fc93f404f294c5e7dc5429a3523cd9f7"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Comparator\/DateComparatorTest.php",
+            "hash": "a22839650f9133e7bbb4f601e29dad6b19e763aa"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Comparator\/ComparatorTest.php",
+            "hash": "6774a9b63c01911a6a616f571b9ba035bf96f6b2"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Comparator\/NumberComparatorTest.php",
+            "hash": "8a710e158186feaf2ab66c778d967cd381e66643"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/GlobTest.php",
+            "hash": "c0fc72bee7fda3a1b136ce4f49bd805e7bb0c323"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Iterator\/RealIteratorTestCase.php",
+            "hash": "7666f6554369fb612349ad7d0b905eee50a29ab9"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Iterator\/MockSplFileInfo.php",
+            "hash": "4b2752f763ff94f98c7e0b2507346cea7b8ca639"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Iterator\/ExcludeDirectoryFilterIteratorTest.php",
+            "hash": "60a58a68dc0bbba699ffe290752f1f1e40d0545d"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Iterator\/FilenameFilterIteratorTest.php",
+            "hash": "dcd69a8da53081d98cc8aef0bbdfa8575ca43811"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Iterator\/PathFilterIteratorTest.php",
+            "hash": "d730816d2044e111a39441f174aa6deb8e99fbe9"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Iterator\/SizeRangeFilterIteratorTest.php",
+            "hash": "da45fd1cd67d509e3e7526cad59c90cf08fe14ad"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Iterator\/MultiplePcreFilterIteratorTest.php",
+            "hash": "40fe619637a0931ef79a95fdcb8774cfe3b98deb"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Iterator\/IteratorTestCase.php",
+            "hash": "4399ce1cd2b87f84999cfd6cd1e0c69ef9bc885a"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Iterator\/DepthRangeFilterIteratorTest.php",
+            "hash": "d4789b70985603cc1e8d37d501fb741b991553a5"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Iterator\/RecursiveDirectoryIteratorTest.php",
+            "hash": "04b43d3ea9d2c2d4383451d681c481bae8a7d319"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Iterator\/CustomFilterIteratorTest.php",
+            "hash": "261a59270ecace2f1c62725df38b6b0b3d573931"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Iterator\/DateRangeFilterIteratorTest.php",
+            "hash": "af0b7476344903d90313f042b61cd217185740fd"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Iterator\/SortableIteratorTest.php",
+            "hash": "0ab2a5cae3ee5a503e0e28242d04c685e5b23cc1"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Iterator\/MockFileListIterator.php",
+            "hash": "0d2ea316a414260a323d92c4866df1a0cf6d2e75"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Iterator\/FileTypeFilterIteratorTest.php",
+            "hash": "67f26f8564b94096fb62193f21f3ae0e13026f66"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Iterator\/FilecontentFilterIteratorTest.php",
+            "hash": "fd2544a67b681b69c5cae392b46d5c20964ecead"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Iterator\/Iterator.php",
+            "hash": "da68b851c3a862262ba23f6c71b9f1687d625d7a"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/FinderTest.php",
+            "hash": "3f567d0c88cdfaec57c9b9447d0f6151c100923b"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Fixtures\/with space\/foo.txt",
+            "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Fixtures\/dolor.txt",
+            "hash": "d6ecaf7e07f38d9f28ea873e4654ea4f4c3d76a6"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Fixtures\/A\/B\/ab.dat",
+            "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Fixtures\/A\/B\/C\/abc.dat",
+            "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Fixtures\/A\/a.dat",
+            "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Fixtures\/ipsum.txt",
+            "hash": "e4ee2b61d9556971704d1549e97d0ec1a56aba59"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Fixtures\/one\/a",
+            "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Fixtures\/one\/b\/d.neon",
+            "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Fixtures\/one\/b\/c.neon",
+            "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Fixtures\/lorem.txt",
+            "hash": "00f3f0dfbfe9dda5bd62cc7e947e97de6e714352"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Fixtures\/copy\/A\/B\/ab.dat.copy",
+            "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Fixtures\/copy\/A\/B\/C\/abc.dat.copy",
+            "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Fixtures\/copy\/A\/a.dat.copy",
+            "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Tests\/Fixtures\/r+e.gex[c]a(r)s\/dir\/bar.dat",
+            "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Glob.php",
+            "hash": "afbabef318d43ec3faccac2193a4390016fd8647"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/README.md",
+            "hash": "c5986010a8ed496369d828a3a721b9288f771b6a"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Iterator\/FilecontentFilterIterator.php",
+            "hash": "bb82bf0a256577e9b1c007759d31769fe128f7bd"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Iterator\/MultiplePcreFilterIterator.php",
+            "hash": "1fe6c9242d282066287f0c30f12659e47d8abe48"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Iterator\/SizeRangeFilterIterator.php",
+            "hash": "55b0e8dc0221902b8279c326938d83d165977f66"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Iterator\/FilenameFilterIterator.php",
+            "hash": "1637aa5205192e392af0cec7c15943b20f7ef1d0"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Iterator\/DateRangeFilterIterator.php",
+            "hash": "6228994e2329e09e92f882b25f85ca5c56020694"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Iterator\/CustomFilterIterator.php",
+            "hash": "7425173d2343d51849005609f3f64fd5a6ff13d6"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Iterator\/RecursiveDirectoryIterator.php",
+            "hash": "ae2c5074bb4c23173ab0965458e258200ea02ba9"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Iterator\/ExcludeDirectoryFilterIterator.php",
+            "hash": "6767c7153d6e56a1ae909e7edd3bce3942a905d5"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Iterator\/SortableIterator.php",
+            "hash": "8b05315f98117d0d6567695a26fe08a7806c770c"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Iterator\/DepthRangeFilterIterator.php",
+            "hash": "6597782e70a2101579f19b1436b973b694da3c57"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Iterator\/FileTypeFilterIterator.php",
+            "hash": "cbad43787b6e7319ddb7e0d1a427c2bea7250b50"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Iterator\/PathFilterIterator.php",
+            "hash": "57dc39655272243d216b36482114bbe6b7f2b732"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/phpunit.xml.dist",
+            "hash": "0ef4f27036813ac5adb210a58e8740462a748225"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/Exception\/AccessDeniedException.php",
+            "hash": "53a5d930c0a1842d436ce3a1bd0770474af1502e"
+        },
+        {
+            "file": "vendor\/symfony\/finder\/composer.json",
+            "hash": "72e578947805f0a930ef6f85f1dd5af1b33b6be9"
+        },
+        {
+            "file": "vendor\/symfony\/console\/ConsoleEvents.php",
+            "hash": "c8bde5f9fb238f4d275b46511a8bcdf8a067012b"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Application.php",
+            "hash": "5b23f8f8de02b49a546b9308eaf8efa376e84d32"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Logger\/ConsoleLogger.php",
+            "hash": "a5e526d62a2017d8f8b6d981393570d2e1411dbc"
+        },
+        {
+            "file": "vendor\/symfony\/console\/LICENSE",
+            "hash": "b403a7dd46e345a22859f05703f153301b311ba5"
+        },
+        {
+            "file": "vendor\/symfony\/console\/CHANGELOG.md",
+            "hash": "3d1463df7a548f9ccc237a2cb266fc65bfbf7c50"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Input\/StreamableInputInterface.php",
+            "hash": "4536d5d88bf2d967b6a6194343fa093a02d4736e"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Input\/ArrayInput.php",
+            "hash": "d7b90fc0bcd2974288cdb12e105a7c529bd2a0f9"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Input\/ArgvInput.php",
+            "hash": "d1c8846a65f7318a7fe29d793e0ccc06d754af53"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Input\/InputArgument.php",
+            "hash": "1b43036eb3a0b99c0578f398bda78c07af73ace5"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Input\/InputAwareInterface.php",
+            "hash": "9c62efdbe2ae4a344fcd41b05ccc7b63248f104f"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Input\/InputOption.php",
+            "hash": "36a839d747e20821d43dace5136c95dcc75e5947"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Input\/InputDefinition.php",
+            "hash": "9df81e7f603df3514a52f62686c4c7d07b0b9703"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Input\/StringInput.php",
+            "hash": "7260b18e56035af9145461c096e020eb4df55156"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Input\/Input.php",
+            "hash": "6687e5905fb3fdf03feb08dc6d303069cde4f8ba"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Input\/InputInterface.php",
+            "hash": "0a8ce054c01e936bf7ed95d7ff313420f2ade18e"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Terminal.php",
+            "hash": "3dbca1b4260d25714dab785e29b85f47cf069505"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Resources\/bin\/hiddeninput.exe",
+            "hash": "995eb0e883c7adebcfadd29100d810cb7f882bcd"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/TerminalTest.php",
+            "hash": "f778f4e1089d50ef9d88b078512917e6bac09497"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/ApplicationTest.php",
+            "hash": "ec559223493f2fdc64bbe05106de1313a6b18fc2"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Logger\/ConsoleLoggerTest.php",
+            "hash": "3a1e8e6499973cf479afba3ff57b222b5ecb0463"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Input\/ArgvInputTest.php",
+            "hash": "83b045a6eeafb5d4e73e6578a6ab8e1aa35ba535"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Input\/InputOptionTest.php",
+            "hash": "13d0c0a94399a9ab9759eb47d6e2f42e9b9bf825"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Input\/InputTest.php",
+            "hash": "f068f39fdd20ba2e43b669c309705336dc4130f4"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Input\/InputDefinitionTest.php",
+            "hash": "53706a626355c7a025b36ef0398dc5f427e84e92"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Input\/StringInputTest.php",
+            "hash": "61b22c16c104b77c4b8104d5de9847123f4dbdb8"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Input\/ArrayInputTest.php",
+            "hash": "e5fd1794e0f9c977470353cb79b1e32f6d8f6c7a"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Input\/InputArgumentTest.php",
+            "hash": "9844caa342e16e75b13f43a373c5ab1f56024d15"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Output\/ConsoleOutputTest.php",
+            "hash": "250a2ae481d4dc3176f1d8fd6e54e69f71957875"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Output\/NullOutputTest.php",
+            "hash": "cb5a7f3ab2a4cbfa43e5400a1e7eb79e5926cad6"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Output\/OutputTest.php",
+            "hash": "8c62f07cb40709c369e2835b86a232161d8339ad"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Output\/StreamOutputTest.php",
+            "hash": "aea8ffb0708c89a63078b70913f5fffea1ab743e"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Style\/SymfonyStyleTest.php",
+            "hash": "98cadc941a3b114e593b7328c9cfbbd1ea30c1e3"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Formatter\/OutputFormatterTest.php",
+            "hash": "8b96719f1e35f7c905fde25a068744b03fb65c3a"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Formatter\/OutputFormatterStyleStackTest.php",
+            "hash": "fe7e208664673ee08caa4cb781b0c8d53bd80dc2"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Formatter\/OutputFormatterStyleTest.php",
+            "hash": "fe6c0e31ebc4bd9a311a08e83a97da58834b57e3"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/CommandLoader\/ContainerCommandLoaderTest.php",
+            "hash": "eec5aa7e5294c71edea097386b1b3c96004a41ed"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/CommandLoader\/FactoryCommandLoaderTest.php",
+            "hash": "42fa6f14b17c9cc4d6f75b15df620e374f9b01a0"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Descriptor\/MarkdownDescriptorTest.php",
+            "hash": "c17502e3d8ad16b48bee0a97e99058ab76d28fdc"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Descriptor\/XmlDescriptorTest.php",
+            "hash": "4533e7f01e2eefcab5250830c98ce276971c04b8"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Descriptor\/ObjectsProvider.php",
+            "hash": "c2a789aa56111b2fb5647015add936787e23069e"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Descriptor\/TextDescriptorTest.php",
+            "hash": "d1a152d9f9c8c3cd670489273bf437947308405e"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Descriptor\/AbstractDescriptorTest.php",
+            "hash": "ca4997cc053e2548bad351b966e001559d500666"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Descriptor\/JsonDescriptorTest.php",
+            "hash": "1669d169c9c1081dfa23fc23bb498b164b5901e9"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Tester\/ApplicationTesterTest.php",
+            "hash": "26dfd32bade40827a5dfacc20a127b7b5369830c"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Tester\/CommandTesterTest.php",
+            "hash": "9d775d21823a243704bed51893b7bc95bb97cf65"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_3.xml",
+            "hash": "bc7e46131541be45fb4522ec4d65b591fe9cc644"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_definition_2.json",
+            "hash": "1a05e824c74b06e011d9691b23befd2261fb79e8"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_3.md",
+            "hash": "a2e8d9753406ead62336427cd763ad210256166a"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/DescriptorCommand4.php",
+            "hash": "ff05b91f10a605e146e34afe9b85577f292e9608"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_definition_2.xml",
+            "hash": "1d215858311ca9bc0e181d02eab361ee42772014"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_definition_3.xml",
+            "hash": "13411e6b6bde826df3c24bbd28298e06843e8519"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_argument_2.json",
+            "hash": "5e668a784c9b9e1adcbeea4cc868b69da678e1df"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_with_style_array.xml",
+            "hash": "0d58945df288187e4060e76efec21cf531e2f705"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_1.json",
+            "hash": "9ca63b0f93724404ca520e8f34c2f83e24547982"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Foo5Command.php",
+            "hash": "ac861803979ce9f816ea566c7b36b3ad2797e694"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_2.xml",
+            "hash": "bf11a1ce9764aa01dba929a0f2c217b632a14165"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_definition_1.xml",
+            "hash": "8763c59808e3e20290927f2da3554753fa5ba771"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/TestToto.php",
+            "hash": "105465a8d53481f862be9b546c528f10e7f425dd"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_renderexception4.txt",
+            "hash": "7cdb309fab7602ac51c99fbbe9a9a05d42f431f4"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/TestTiti.php",
+            "hash": "69dc45d3666f101e615fb06d31095a9de17dbc5b"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_with_style_array.md",
+            "hash": "ef047d55cd8bdb7be839bd738f390c4f479a02ba"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_1.xml",
+            "hash": "0a7eb74ddc0377013bbfa8dd95a8b5b63cbfbf64"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_6.md",
+            "hash": "7d6954c48034b89cc13eeb6a2be8c71e9b868e0d"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_5.xml",
+            "hash": "883fdb43e9185157ba9e2639f49f865883827e14"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/FooLockCommand.php",
+            "hash": "b359cdd1b1509565117a1fce84bd11efe58c5b41"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_2.xml",
+            "hash": "16288fabc57a9c83df1cfe28eb6a64c60c5c9e79"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/DescriptorCommand2.php",
+            "hash": "db5e0ba080b8f093879c4b7f10d0b7dba0dafd2c"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_definition_4.xml",
+            "hash": "f5b54079383d4e671d75732e46ddeba068933421"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/DescriptorCommand3.php",
+            "hash": "7403274cdfdac6267245838762f5d3697486fa84"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_renderexception1.txt",
+            "hash": "c5a98cdde73e2ff438c59ba088358fa18f382eb2"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_4.xml",
+            "hash": "b19fd17043f539dbb439edf28f621590fd0f788d"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_1.md",
+            "hash": "78a949176fc5962bfeeff73fe41e18fa27d19f59"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_6.xml",
+            "hash": "ddb4c8fb470282a11490aced26f97a44311ef75d"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_renderexception3.txt",
+            "hash": "ab7834a8f50e0cacd6fa2cd6e92edced27ff68b9"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_2.md",
+            "hash": "7135173ad17ee56f7c739f0f1147d0181fabc654"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_1.xml",
+            "hash": "888f3cb34a7a5c51d7fdd09c7163bbec9cd5f5b8"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/DescriptorCommand1.php",
+            "hash": "50ee8e930d281f147c3a138087dda9660d3e492a"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_argument_3.json",
+            "hash": "bc929d9f56c3d655ac9b7fec0ff5aecb139ed02c"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_argument_with_style.md",
+            "hash": "2e4514b990db901af752fd2412f832a58b0f2e7a"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_argument_with_style.xml",
+            "hash": "ec9c16692696d0f3a851a2cfb3dd09e513ee7278"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_6.json",
+            "hash": "126ce664c524886045fd0e161ac58baa950e2954"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_renderexception2.txt",
+            "hash": "55bf2c438c0b2fa1cf1efae453793ee02d8ac5f7"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_definition_3.json",
+            "hash": "dc95b3c4ea84c9ba142e40164268f2e69169ce06"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_with_style_array.json",
+            "hash": "38622cfb3d65db8779bc0ac6d74802f77d694081"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_with_style_array.txt",
+            "hash": "941e581b23cce15fc76502499d3b8d04e2f56f62"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_definition_3.txt",
+            "hash": "0a163f33b4eab60d2cc4376d68653eca9797ef8c"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_argument_with_default_inf_value.md",
+            "hash": "6e777b2f95fa1345f93ac055694db320c21fa2b4"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_definition_4.md",
+            "hash": "787ad42e9865cd7616a8ba17c0eac815b828f81f"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_2.txt",
+            "hash": "9fa90655f5b68853d94de501a7f2a071dab4d5e6"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_renderexception_linebreaks.txt",
+            "hash": "a0a4bb36c58a17946f469da3fcff97a85974ade9"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_3.txt",
+            "hash": "e2a0940d2bf1242ecc120bc98830cf1ac908e0b3"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_definition_2.txt",
+            "hash": "b9ad614d1317ba7ebbad74e78ba89afe43b67645"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_1.json",
+            "hash": "d768dbfc25138d5bfcc69d0a838cd82bab6fcecf"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_definition_4.json",
+            "hash": "6ad18b6396e9b35397ace919b7fc03658a917561"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/BarBucCommand.php",
+            "hash": "393f5bf07718430c799f6d6277b985858a5a8707"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_1.txt",
+            "hash": "7a102eb7a6641eef34a64a7bf63880ff2f59c0b5"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/command_mbstring.md",
+            "hash": "6a5fa1b4d1dfbe15e42d75359c821d6059c1dd0b"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_argument_4.json",
+            "hash": "f4b4483b8882f606f2a4e5aae026fc449dd7e5e9"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_argument_2.md",
+            "hash": "1a60a269430cabba8b71dd76d2162573fda13017"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_definition_1.txt",
+            "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/FooSubnamespaced2Command.php",
+            "hash": "6c107965e82fb80d40f459c2fc23be4561edc9ad"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_definition_1.md",
+            "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/DescriptorApplicationMbString.php",
+            "hash": "712a80837749f61bb637fad536c77bf394244e6c"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/command_1.md",
+            "hash": "4ce1323c8d0814448712dc73a569605627f4ffe0"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_4.txt",
+            "hash": "76ff5b464bd33aa3ab055816fcbb1cc55714671f"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/command_2.json",
+            "hash": "04ca025f814d44c9b45d8a5106f9034a94ba3131"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/FooSameCaseUppercaseCommand.php",
+            "hash": "cf8e1ff471057d2542e3c66b35af0e054da90cba"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_5.txt",
+            "hash": "4c4ad65b5da89c5c955a8b077256e6fd2c696e03"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/DescriptorApplication2.php",
+            "hash": "353a4c771d472406d7647d34dd2658ee820ad9d9"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_definition_4.txt",
+            "hash": "3ca6011ad5cad927c02048c58fd350ae2bfaeaed"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_argument_3.md",
+            "hash": "de4b2f54892f28cbf36473c7c076f0504eb63ec0"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_2.txt",
+            "hash": "607a494cba57bea75346a1f4fb41424a0895413d"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/output\/output_9.txt",
+            "hash": "dcef8256a0840fa8be89892dd539fe9da1b3879d"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/output\/output_8.txt",
+            "hash": "3d445a037ad5ed7d0b380abb601ff8ad6f828d12"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/output\/output_12.txt",
+            "hash": "b2b05ae1bec3d76db414f6f7b89d2da7cb14d0c1"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/output\/output_13.txt",
+            "hash": "93a0210183340c488cb59d2bc04f128e8598f9f2"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/output\/output_11.txt",
+            "hash": "deb4bb89ca3d2f511daf04c3c2801bf6228344c7"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/output\/output_10.txt",
+            "hash": "e579bf8eb5599f85f82bd73a592e4af3354d5bee"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/output\/interactive_output_1.txt",
+            "hash": "a7e91f84a0acfa5e2fa6e3775ac470be96cbff24"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/output\/output_14.txt",
+            "hash": "075e85cef152c3db8e282ea774d76683d134d109"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/output\/output_15.txt",
+            "hash": "9089e70f78910f10e766a18909e4b6361667df3f"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/output\/output_17.txt",
+            "hash": "96506b7406c19ae82e1fc5f00d2b690311a99fec"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/output\/output_16.txt",
+            "hash": "e83b215827fa9494db07fc9c0dfb3794e69f2157"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/output\/output_6.txt",
+            "hash": "2955a9882f9de13b5868f64922b7359d9bb1ac25"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/output\/output_7.txt",
+            "hash": "d005a229329c0867251307f26a9a9c7bcb6e6392"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/output\/output_5.txt",
+            "hash": "13f9baf1fd2aed4844faf7970c06189b3d597db9"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/output\/output_4.txt",
+            "hash": "53f61933524fe672547f137d9eadaf50cde7e727"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/output\/output_0.txt",
+            "hash": "2f5b93c4bfe0972ffe60fb8b497a643f6da5364b"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/output\/output_1.txt",
+            "hash": "04a44a3f6ae0d44916afcf782db907b2c0bd71e9"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/output\/output_3.txt",
+            "hash": "9d612f2ec516b62c23d3075432ef8fed2a13a200"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/output\/output_2.txt",
+            "hash": "38dd3573ae730dfd5913c6d4c6c427d669c9a92c"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/command\/command_8.php",
+            "hash": "9c99e6b3df61ef569ed32ae73e3d138f2a87cfa1"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/command\/command_9.php",
+            "hash": "767ddfa42adc70c539ad5c8a1713c84b742439ec"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/command\/command_1.php",
+            "hash": "eb3d09d2a84ced10adcbf635ca2537960f39dc93"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/command\/command_13.php",
+            "hash": "02582d9a956e41d7a4d00670e362d3a5e65b772f"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/command\/command_12.php",
+            "hash": "d1504431681e9dfff35a6cca2be97cc3b78628ab"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/command\/command_0.php",
+            "hash": "a3af3247a9c2f900fb999af36a3a86539829fcd0"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/command\/command_2.php",
+            "hash": "fda81a2229454f0565771c8f6ed4ce46e6536829"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/command\/command_10.php",
+            "hash": "fc9b0bd938c38576e799e4cd9167ffd713c044ec"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/command\/command_11.php",
+            "hash": "3f20421230fda37722ed2b3c127a2a3c81753534"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/command\/command_3.php",
+            "hash": "44a53e9111ec168f7324e24082509d482ca6ddb6"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/command\/command_7.php",
+            "hash": "f4ff499fc92c6950d23ce3e88ded0c653a771eb2"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/command\/command_15.php",
+            "hash": "24db222948d0fa3d47370d1d7bae3150712f6e46"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/command\/command_14.php",
+            "hash": "a74b899517311e9688f499e0bbd7020ce13e22e4"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/command\/command_6.php",
+            "hash": "b7ff0c768eedee3300fa229994cf0d4a265b8d25"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/command\/command_4.php",
+            "hash": "fc230462d11cf3ba2b42e3132a7d758d0fb67920"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/command\/command_16.php",
+            "hash": "4286a2a5b686d6855c331b260f1374a7b8bd0b8f"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/command\/command_17.php",
+            "hash": "1b5dbd7d6d4e87ee0191fbb5c40bccf68f920555"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/command\/command_5.php",
+            "hash": "5d13ab79ab4d52585a022d5187a920698a70ff29"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Style\/SymfonyStyle\/command\/interactive_command_1.php",
+            "hash": "7f424410702a203b75e7dcfd9f7974a19bcfe6e1"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/FooCommand.php",
+            "hash": "0fc4715f2f54e7997732329f757559a732c99207"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_argument_with_style.txt",
+            "hash": "d7bf9bcd9377f2b77f2b8bc422969eaf6414b284"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Foo2Command.php",
+            "hash": "78499331101c1805107f53b3b4396636734c9312"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_6.txt",
+            "hash": "92ad5c697c43b09372a87145697db70278225d8e"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/DescriptorApplication1.php",
+            "hash": "ff13cee1b10638e0ec298d0726a51d37b0b965ec"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_1.txt",
+            "hash": "3e8d525cd2d766a890a4b8844d55bddcc5b62b81"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/DescriptorCommandMbString.php",
+            "hash": "2ce42729327bfae3dd11c9f02e42545c937b359c"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_definition_2.md",
+            "hash": "e0a338f73c592d168bc83f596e433cde9fd5e258"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/command_2.md",
+            "hash": "be9797e2a173a648238c20d8ba0ac9ec6a651f99"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/command_1.xml",
+            "hash": "df0088e9708bdb1450a622a7093b86b82c457ab6"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/TestCommand.php",
+            "hash": "13a3dad4add2ca469e38c1e5a9e5dcf161c8878e"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_with_default_inf_value.txt",
+            "hash": "576773e84ed90cfd2c8fb8c93d84f98f5dd5ba3e"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_argument_with_default_inf_value.json",
+            "hash": "110f1552276157f4539b2201002d09557f34124d"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/FooSubnamespaced1Command.php",
+            "hash": "62c6a7729c766640ee7ee6d8ec76f1c4713ab739"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/FooSameCaseLowercaseCommand.php",
+            "hash": "c8c1394b85834d58b070dad489090509bca2285c"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_renderexception_escapeslines.txt",
+            "hash": "6a6c8c240d8231717b484f160f309ea90292dad1"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_renderexception_doublewidth1decorated.txt",
+            "hash": "31ee4161d3763b73cb34deab843cf99b864c3aaa"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_argument_4.xml",
+            "hash": "64a3bab56d8356fe8d107ddc3d82942da5303255"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/command_2.xml",
+            "hash": "a8f549fa025d545f57a4b702555dbe6b669d4c22"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/command_1.json",
+            "hash": "e11f2244a2bead35b0fdcf904f843cd88699d631"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/FooOptCommand.php",
+            "hash": "24cef69c14440929efd9cc6435f6f08966dc6422"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_with_style.md",
+            "hash": "629107d81e6176967d9f6e860a98dc1b7198abcf"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_3.json",
+            "hash": "a369341a9c3a59c0a3ee1277c6c1ac03ff2e0ebd"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_argument_4.md",
+            "hash": "d538dfd46b760f0d4e1d75320e3cc2eecf30cf9f"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Foo1Command.php",
+            "hash": "f060381ac705980d99cc06d63389fe8794f50e5a"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_2.json",
+            "hash": "ac57029d23ca6f1f9d7cb939b496381707eaf817"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_argument_1.xml",
+            "hash": "487601225be3c24f2ba45d71aa9e33386a25dd5d"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Foo4Command.php",
+            "hash": "2e31f8cdb40b11ba8d01d734c1f89a1376e42d65"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_renderexception_doublewidth2.txt",
+            "hash": "79b811febf522734b8e25fdfd821a24e86d2e2e0"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_definition_3.md",
+            "hash": "90f5ae0e7196418141fdfce3153c9a1e58ad82da"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_argument_with_default_inf_value.xml",
+            "hash": "1e3c20f6cf328aa381a8a5c7f5258dfe4d146a31"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_with_style.xml",
+            "hash": "c77e3d086f24b696252cbec112c2a2f18681807f"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_argument_2.xml",
+            "hash": "fc576b4061a0573c39a0ca7ec38058eb516c6b84"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_argument_3.xml",
+            "hash": "eadb4f82154b5fe81e0fb31f295fae03793372cb"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_argument_1.md",
+            "hash": "73c0e92d01fb59607661ce26c1905f836154f793"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_renderexception_doublewidth1.txt",
+            "hash": "801e7877d2f737a7052273ea9a29d5a19fa4fc37"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_mbstring.md",
+            "hash": "95843ebfe8dcff869d8f39de9933369a86de0954"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_5.md",
+            "hash": "f1cf8ceb1b15edc231a0fdf0ce0f1b6066f4a8c5"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/DummyOutput.php",
+            "hash": "b3a1935f89d096a9aad9b1b64f6279453b1680ae"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_renderexception3decorated.txt",
+            "hash": "ed51d83c74dc94c3e15a4d7f75e05acceab3ad76"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_mbstring.txt",
+            "hash": "9a3091c8bd4225fb1cbcc936903cd9cc3857e004"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_filtered_namespace.txt",
+            "hash": "0347d4ff12bf9c8e6ea4fe22a66ec46d9edb5ecf"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_with_default_inf_value.xml",
+            "hash": "6ab94cea66f4bae19cb3c62268f4a1d1308b0b89"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/command_1.txt",
+            "hash": "85df37f31116aac538d2b3745c4aeb363a31138f"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_5.json",
+            "hash": "ce944572d4781face310f4c131e685b086ea55f0"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_2.md",
+            "hash": "f98d9c19af5bd20108c55a9b45e598f797ef1769"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/FoobarCommand.php",
+            "hash": "6d1b2ba1bce376271b1c70934435b498898ebd9b"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_1.md",
+            "hash": "2023ccb9c71b3a17ec4f3fd06c5d0cde391657dd"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_run4.txt",
+            "hash": "0ac2494e8b28a6a7ce522e75df2b9b8eb8cd694e"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Foo3Command.php",
+            "hash": "672b2f0e73aa6ca2ea712631491cef3cc076f197"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/command_mbstring.txt",
+            "hash": "3fadf7de30d2975eb9d8bf7f634e9363731baa2d"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/command_2.txt",
+            "hash": "0831f59ef3a6cfe89289e7247f5b9ec080ef6483"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_argument_4.txt",
+            "hash": "74656e5f5ffe45889fa2f8040baf00fdc6c867dd"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_with_default_inf_value.json",
+            "hash": "29073e344bb5fa90186d350d79316110bb6897e2"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_run1.txt",
+            "hash": "8cebb87f2c6dc553f0466e236a5b9b2b526a1a34"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/Foo6Command.php",
+            "hash": "ea42ad7329e8a204ce66d0ed73dfd049ff4b22d4"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_with_style.json",
+            "hash": "6cc5ffd261edca09e316348961b68368c7c1689d"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_argument_with_style.json",
+            "hash": "11e0135abb55ed3b33e7428e9c370448239ef530"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/FooLock2Command.php",
+            "hash": "7e2191c2919c890c0d653810aada9e2086f2703b"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_argument_1.txt",
+            "hash": "873178ae315a7b79346d276bdd408e7ee71962d7"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_4.md",
+            "hash": "c8d8fbf260de01d5b6b80b5e2689e3d7ebb927b3"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_argument_3.txt",
+            "hash": "72a7d65530b108568e3a9d731cdc5b8517e56c78"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_definition_1.json",
+            "hash": "b7a45cd39f370a64d5919895b859a812a1a1df2a"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_run2.txt",
+            "hash": "f142b2a777c4eea799d4429ab0cd8392e4571e5a"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_4.json",
+            "hash": "f59b05d264e0153cb0763c4578e58e71be0d024b"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_gethelp.txt",
+            "hash": "f3433a1f8456f65bd5c344edc3245d735148af0a"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_argument_with_default_inf_value.txt",
+            "hash": "8aec6e7834b4b4e3b4f8767b260386a02b59fba5"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_argument_1.json",
+            "hash": "2003c429ed1bd5979df9c89a613f7aa5c058ce27"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_2.json",
+            "hash": "e7f668c39059a7af8a7f76e931a47c16319db046"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/application_run3.txt",
+            "hash": "f142b2a777c4eea799d4429ab0cd8392e4571e5a"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_with_default_inf_value.md",
+            "hash": "c735d84a5e6a4154d6802562ac82cb47009b2e5f"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_option_with_style.txt",
+            "hash": "eb729fdc5c0628831a0093b306d090b2ff6a43fe"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Fixtures\/input_argument_2.txt",
+            "hash": "060f46255ce0ccfb53a6a62e7cdf375cd50a2db1"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Command\/LockableTraitTest.php",
+            "hash": "0529ad4796373191a206694cce25c2fbf8b5ec4f"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Command\/CommandTest.php",
+            "hash": "679491fd75a49408534ea556a39e099293e64596"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Command\/ListCommandTest.php",
+            "hash": "ed52b5e6ca98f82a8e6a6dbe9cbdbcbbccca9184"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Command\/HelpCommandTest.php",
+            "hash": "16d95dd06bbb3d415fe199f8454b2351cf3e1976"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Helper\/TableStyleTest.php",
+            "hash": "8b1570def3e00716efa8f414e5cf8414da461196"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Helper\/QuestionHelperTest.php",
+            "hash": "a20767650e8cd91ff7a9777598a03f68fc3624a4"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Helper\/HelperSetTest.php",
+            "hash": "930460d2b0507f011820924149e9c61b800e2453"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Helper\/ProcessHelperTest.php",
+            "hash": "62d9101fc2270ece3ca8421b939cb108635d0053"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Helper\/TableTest.php",
+            "hash": "9dd4bd7fb87f6d03e3fa564f3999ff0ad0b79349"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Helper\/HelperTest.php",
+            "hash": "ee54dec6d7b6cb020d9dce324e9e7fa421976d6b"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Helper\/ProgressIndicatorTest.php",
+            "hash": "379ed3035860736100fd818de70e4d0de8364f3a"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Helper\/SymfonyQuestionHelperTest.php",
+            "hash": "dc6d059b9565728bbc9898be5b4630c7c1e3fc7e"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Helper\/FormatterHelperTest.php",
+            "hash": "58559027e0f34b480177d2444583d8d15cc22b1e"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Helper\/AbstractQuestionHelperTest.php",
+            "hash": "63b82fdd5aba5d36a392132ea96a6aef0726ea03"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/Helper\/ProgressBarTest.php",
+            "hash": "bb6f03ee690a63c8f770f4bc76e7fecbde6f2bf1"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/DependencyInjection\/AddConsoleCommandPassTest.php",
+            "hash": "37341ad09c403c4095caa444a40274647778892a"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tests\/EventListener\/ErrorListenerTest.php",
+            "hash": "8da6c26ce60ca876e62a9eb436d67ee6888f4bd1"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Output\/ConsoleOutputInterface.php",
+            "hash": "afc9cc9118266cb3e8c9821fda0b2150a4f5baac"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Output\/BufferedOutput.php",
+            "hash": "e5d2e6b6d645f2afe2f8d7d2771ae31d09ca5d5f"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Output\/OutputInterface.php",
+            "hash": "f2685bc6c98d3d6f399f433fc09bff29f990a415"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Output\/Output.php",
+            "hash": "e794cc2c89d068827d3793d1143bff5e741148d3"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Output\/ConsoleOutput.php",
+            "hash": "4d15f141610ed1f914b25f1c5171daec9bd0557e"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Output\/NullOutput.php",
+            "hash": "e77874b3e1a0189ead11ffa4c9255947f6c6b9a7"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Output\/StreamOutput.php",
+            "hash": "8d38d146ff789fb1feea32f859f2d1e05625c7a4"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Style\/OutputStyle.php",
+            "hash": "52cf66f3a58e94ede40978a40840820f72ba81fc"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Style\/SymfonyStyle.php",
+            "hash": "ee567cb8616e38a84933e1d94106b8f618a442a3"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Style\/StyleInterface.php",
+            "hash": "ecc154f5e22f384dcf71f63669364a84b4b61937"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Question\/ChoiceQuestion.php",
+            "hash": "088c447febc744cf5623e6e815605d83d238990a"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Question\/Question.php",
+            "hash": "a9164ca0004a107f4099b47f3fd3aae711c1d97f"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Question\/ConfirmationQuestion.php",
+            "hash": "98884232b93806148a32ef030357ec7ff9cfc4fc"
+        },
+        {
+            "file": "vendor\/symfony\/console\/README.md",
+            "hash": "f7dc57f6c0275b59ac29850f7ad9b9448954a2e0"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Formatter\/OutputFormatterStyle.php",
+            "hash": "e6ba41e8ceb1d97cb41607a24fe3529356e6014f"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Formatter\/OutputFormatterStyleInterface.php",
+            "hash": "9492662f2631fbf299991db1ca938cced52cfc82"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Formatter\/OutputFormatterInterface.php",
+            "hash": "65da8f983245025dc6ea41de06ebfe31f7bd7519"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Formatter\/OutputFormatter.php",
+            "hash": "adec72e99ca7622d614233c3230fea8075a27fc7"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Formatter\/OutputFormatterStyleStack.php",
+            "hash": "bc0f16a5001f36515db8d59ce685dcf1089282b1"
+        },
+        {
+            "file": "vendor\/symfony\/console\/CommandLoader\/CommandLoaderInterface.php",
+            "hash": "06bd86c34d9bf0a172924d6973a3a130daf22962"
+        },
+        {
+            "file": "vendor\/symfony\/console\/CommandLoader\/ContainerCommandLoader.php",
+            "hash": "7a90c03a56d777614dc9c9db90a01e3823afa3f6"
+        },
+        {
+            "file": "vendor\/symfony\/console\/CommandLoader\/FactoryCommandLoader.php",
+            "hash": "d0c350f4ea10fc519f88026082730542990b9c78"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Descriptor\/TextDescriptor.php",
+            "hash": "9f69e4cb28886b5a28936d7d16c36a87a752a422"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Descriptor\/ApplicationDescription.php",
+            "hash": "be85f5b097ddfe9889c9a13d117865d1c8c76777"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Descriptor\/XmlDescriptor.php",
+            "hash": "5066f1afe89512bd01a7c33cd7b1a07199366115"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Descriptor\/DescriptorInterface.php",
+            "hash": "0339e878a1ee78e382589dc3bc8fee5afc151c89"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Descriptor\/Descriptor.php",
+            "hash": "c99505420742de277de7f51e151d96f54f36b2d1"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Descriptor\/JsonDescriptor.php",
+            "hash": "a3e10e8afcb2c3e902fa19353881aece44d3baea"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Descriptor\/MarkdownDescriptor.php",
+            "hash": "3eb48a20937505bb969bd2bf420a7319598b9f65"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tester\/CommandTester.php",
+            "hash": "831d15a0458bf1c0d516e338e8f6a1fd04d87065"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Tester\/ApplicationTester.php",
+            "hash": "2ec685582f85a8ec1dbdf27e30daed63edc71b53"
+        },
+        {
+            "file": "vendor\/symfony\/console\/phpunit.xml.dist",
+            "hash": "337a7419ce8643054bd38faab8a87e705d39802c"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Command\/LockableTrait.php",
+            "hash": "24c37fcafab0fa601c17bbaa40fb1e2cd1e6f518"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Command\/HelpCommand.php",
+            "hash": "ecb0c2b472b62fa8bc67d210dc892e1b49745af3"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Command\/ListCommand.php",
+            "hash": "9545ffcf1aaf054513774adca20e21ea6295a272"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Command\/Command.php",
+            "hash": "603e60a48092e7dc3993cbc9bb4d4f1573d970dd"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Helper\/TableStyle.php",
+            "hash": "f0a8c2d004ecd6f2e7ae672e23607d5b45fd3ca0"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Helper\/SymfonyQuestionHelper.php",
+            "hash": "67bfb6962fa9faf0dda9060de4f15c35b5db57bc"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Helper\/HelperInterface.php",
+            "hash": "e7f0324f79def8ccabdd3afded14470984dd44c9"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Helper\/TableCell.php",
+            "hash": "48b602a4f51b43cf50d43a2e64c5a6cac7b324af"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Helper\/ProcessHelper.php",
+            "hash": "7b192a88170cc6b88d7be1e4b94817b9bc324277"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Helper\/TableSeparator.php",
+            "hash": "59a8b4678d596e17cfb066ddc4358819fa1cc35f"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Helper\/FormatterHelper.php",
+            "hash": "768f7ce4c99613ecb4d3189d29f65e0564f0074b"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Helper\/ProgressBar.php",
+            "hash": "91f05f5c855c4859c9eaa4c8b2126b8a42ab3c19"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Helper\/DebugFormatterHelper.php",
+            "hash": "cd436a31d201e97e4494392875a2335e6ab4dab7"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Helper\/HelperSet.php",
+            "hash": "afc162659c085b762747a538bcf125c63736a150"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Helper\/InputAwareHelper.php",
+            "hash": "75facd7be61ef92c4a1eeb849614610b165cd0cf"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Helper\/QuestionHelper.php",
+            "hash": "80ed3b9a42db4d5f3a344621ac9abdd510c77f7a"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Helper\/Helper.php",
+            "hash": "c9d4914cf6d8c7eb9851d0000ea43b7a1a1d9830"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Helper\/Table.php",
+            "hash": "71da741f83da23f7c3001bd931eb960f014cdaf7"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Helper\/ProgressIndicator.php",
+            "hash": "027b888e098996f2f0630c91cdc46d9d7843d4e6"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Helper\/DescriptorHelper.php",
+            "hash": "aca191ff3d3c999916e37cf809d4060cf4208dee"
+        },
+        {
+            "file": "vendor\/symfony\/console\/DependencyInjection\/AddConsoleCommandPass.php",
+            "hash": "44713bd07a356ef432cd01ba7e217917d07d3239"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Exception\/LogicException.php",
+            "hash": "155ed6fa39f969cbbc1728d95d00f2ebc206fdb4"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Exception\/InvalidOptionException.php",
+            "hash": "9f0c8c99f3241d31f4a18d85e42e42c19aa6f322"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Exception\/ExceptionInterface.php",
+            "hash": "1f10b1adab4b725c899aca564503bd557a0af6fe"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Exception\/RuntimeException.php",
+            "hash": "a5de32b70926a03f0d8a306a01f3b75eebe60103"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Exception\/InvalidArgumentException.php",
+            "hash": "29aad04f931c6cb01ff7117c9089bcf1fbc15b35"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Exception\/CommandNotFoundException.php",
+            "hash": "ebbdb15b88ab22154977dc2dbed3619e0bd05a32"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Event\/ConsoleTerminateEvent.php",
+            "hash": "a010c1bbcd4efde042943e159cc40f6ed6a51da1"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Event\/ConsoleErrorEvent.php",
+            "hash": "d6378f6abe29bcb1495607e03e80d933d29a5873"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Event\/ConsoleCommandEvent.php",
+            "hash": "12808e33d1191ea15dc5fd595c25f30976a600a2"
+        },
+        {
+            "file": "vendor\/symfony\/console\/Event\/ConsoleEvent.php",
+            "hash": "69d02789d030959fb786cb05e2c7b8493d4d3ac8"
+        },
+        {
+            "file": "vendor\/symfony\/console\/composer.json",
+            "hash": "e7253186dcb9d0fae5085430f012c3b97d000c9a"
+        },
+        {
+            "file": "vendor\/symfony\/console\/EventListener\/ErrorListener.php",
+            "hash": "d6d2d1dbd5304ae64c33fd83d295fedd25c6a28d"
+        },
+        {
+            "file": "vendor\/symfony\/polyfill-mbstring\/LICENSE",
+            "hash": "e9da50ed2339449c2e70d397d7a8e73e64870b35"
+        },
+        {
+            "file": "vendor\/symfony\/polyfill-mbstring\/Resources\/unidata\/lowerCase.php",
+            "hash": "65463973d2c1e11f80276b9f1402bc43336e086e"
+        },
+        {
+            "file": "vendor\/symfony\/polyfill-mbstring\/Resources\/unidata\/upperCase.php",
+            "hash": "24295627151e9f400199ba85db5761c5f167d06a"
+        },
+        {
+            "file": "vendor\/symfony\/polyfill-mbstring\/Mbstring.php",
+            "hash": "bfa05209a9fccd6f7685cb45d0d88f8c2c8279b9"
+        },
+        {
+            "file": "vendor\/symfony\/polyfill-mbstring\/bootstrap.php",
+            "hash": "072f0ee1f04e06db3feaf57a75165b7f5dda7d22"
+        },
+        {
+            "file": "vendor\/symfony\/polyfill-mbstring\/README.md",
+            "hash": "c20aaad7bd777b2c7839c363a7a8dfd15f6cca63"
+        },
+        {
+            "file": "vendor\/symfony\/polyfill-mbstring\/composer.json",
+            "hash": "171b377d96d604319305104bd9bc0e3a9e47e897"
+        }
+    ]
+}
