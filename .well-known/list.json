@@ -4,23 +4,15 @@
     "signatures": [
         {
             "file": "signer.php",
-            "hash": "2ac4a45918e0ccc840c6e57de5f117a4d357e14c"
+            "hash": "6281998e598b79d7de67ec45acede91bed5ee8c7"
         },
         {
             "file": "composer.lock",
             "hash": "cbce6d29063b583b8347ec361f362eca239fa2c0"
         },
         {
-            "file": "publickey.txt",
-            "hash": "9d193af751aff96e49ba1cdfd26d3280d250e8b5"
-        },
-        {
             "file": "README.md",
             "hash": "0d2f90c9025829f95e360ef9ed71ed4224f40112"
-        },
-        {
-            "file": "secretkey.txt",
-            "hash": "80a83d4b8f383cf5eaec7d312aad75b01d5009cc"
         },
         {
             "file": "applications\/SignedAutoupdate.php",
@@ -32,7 +24,11 @@
         },
         {
             "file": "commands\/SignedAutoupdate\/Signer.php",
-            "hash": "d88bfef9a24018491f09a274a8ee69e3bb632138"
+            "hash": "7294e2b53dcb973bfb38a1aa16b1bdd5c4f658ab"
+        },
+        {
+            "file": "commands\/SignedAutoupdate\/Verifier.php",
+            "hash": "f6319dce01b119756d7d1fd12f8dd6c2795c2bd3"
         },
         {
             "file": "commands\/SignedAutoupdate\/Generator.php",

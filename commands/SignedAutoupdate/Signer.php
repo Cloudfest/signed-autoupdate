@@ -37,11 +37,26 @@ class Signer extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
+        $fileSystem = new Filesystem();
+
         // is http fallback enabled
         $path = $input->getArgument("path");
-        $key = $input->getArgument("key");
         $algo = $input->getOption("algo");
 
+        // build path if not existing
+        $fileSystem->mkdir($path . '/.well-known/');
+
+        $jsonData = $this->executeLister($path, $algo);
+
+        $key = $input->getArgument("key");
+
+        $this->executeSigner($key, $path, $jsonData);
+    }
+
+    /**
+     *
+     */
+    protected function executeLister($path, $algo) {
         $finder = new Finder();
         $finder->files()->in($path);
 
@@ -53,24 +68,34 @@ class Signer extends Command
             // dumps the relative path to the file
             $signation['signatures'][] = array(
                 'file' => $file->getRelativePathname(),
-                'hash' => hash_file($algo, $file->getRelativePathname())
+                'hash' => \hash_file($algo, $file->getRelativePathname())
             );
         }
 
         $fileSystem = new Filesystem();
 
-        $fileSystem->mkdir($path . '/.well-known/');
-
+        // generate JSON data
         $jsonData = json_encode($signation, JSON_PRETTY_PRINT);
 
         $fileSystem->dumpFile($path . '/.well-known/list.json', $jsonData);
 
+        return $jsonData;
+    }
+
+    /**
+     * Generate signature.txt file
+     *
+     * @param string $key the path to a key file
+     * @param string $jsonData the json list
+     */
+    public function executeSigner($key, $path, $jsonData) {
         $secretKey = file_get_contents($key);
         $secretKey = \ParagonIE_Sodium_Compat::hex2bin($secretKey);
 
         $signature = \ParagonIE_Sodium_Compat::crypto_sign_detached($jsonData, $secretKey);
         $signature = \ParagonIE_Sodium_Compat::bin2hex($signature);
 
+        $fileSystem = new Filesystem();
         $fileSystem->dumpFile($path . '/.well-known/signature.txt', $signature);
     }
 

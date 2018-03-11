@@ -4,4 +4,5 @@ services:
     image: php:7.2-cli
     volumes:
       - "./:/opt/signed-autoupdate"
+      - "../wordpress-svn/simple-cocomments/trunk/:/opt/simple-cocomments"
     command: 'tail -f /dev/null'
