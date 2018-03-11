@@ -5,7 +5,7 @@
 Project was created on cloudfest hackathon for prototyping a signed transfer of plugin packages from developer to users. The project constists of:
 
 - [CLI](#cli) (Tool for creation of keys and signature)
-- [Client Implementation](client-implementation) (A library to verify a package)
+- [Client Implementation](#client-implementation) (A library to verify a package)
 - [WordPress Plugin](#wordpress-plugin) (A Demo plugin having the signature checks and public key management demonstrated)
 - [WordPress Test Environment](#wordpress-test-environment) (a docker based setup for developing or showing the plugin)
 
