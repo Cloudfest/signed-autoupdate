@@ -1,6 +1,14 @@
 # Signed Autoupdate
 
-https://docs.google.com/document/d/1iRSns-AMslhaMeXPssv33ko7q07oZSsYtk7fQe0qfAs/edit?usp=sharing
+# Description
+
+Project was created on cloudfest hackathon for prototyping a signed transfer of plugin packages from developer to users. The project constists of:
+
+- CLI (Tool for creation of keys and signature)
+- WordPress Plugin (A Demo plugin having the signature checks and public key management demonstrated)
+- WordPress Test Environment (a docker based setup for developing or showing the plugin)
+
+For testing purposes the WordPress Plugin: simple-cocomments was enhanced with .well-known/* information needed for the demonstration of signature / public key signed packing. 
 
 ## CLI
 
@@ -84,3 +92,12 @@ So:
 ![Package List View](doc/package-list-view.png)
 ![New Key Add During First Install](doc/new-key-found.png)
 ![Reject Installation on Error](doc/installation-rejected-key-mismatch.png)
+
+
+# WordPress Test Environment
+
+## Description
+
+The WordPress Test Environment was the idea for a one liner setup of the whole demonstration. Just execute ./do-it.sh , it will clone latest WordPress github, this repository, setup an apache with php7.2, a mysql container for the database. Uses wp-cli for setting up the wordpress with test123/test123 username on http://localhost:8091 .
+
+For more info look into webserver/Dockerfile, docker-compose.yml and do-it.sh shell script.
