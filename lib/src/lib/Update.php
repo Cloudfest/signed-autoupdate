@@ -90,15 +90,15 @@ class Update
         if (!is_dir($this->tempDir)) {
             mkdir($this->tempDir, 0777, true);
         }
+
         $filepath = $this->tempDir . '/' . basename($url);
 
-        $fp = fopen($filepath, 'w+');
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         $data = curl_exec($ch);
-        fputs($fp, $data);
-        fclose($fp);
+
+        file_put_contents($filepath,$data);
         curl_close($ch);
 
         if(!file_exists($filepath)){
@@ -172,7 +172,7 @@ class Update
      */
     public function cleanup()
     {
-        $this->rrmdir($this->tempDir);
+        #$this->rrmdir($this->tempDir);
     }
 
 
