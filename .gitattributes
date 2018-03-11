@@ -1,0 +1,5 @@
+cli/ export-ignore
+doc/ export-ignore
+lib/example/ export-ignore
+test-environment-wordpress/ export-ignore
+wordpress-plugin/ export-ignore
