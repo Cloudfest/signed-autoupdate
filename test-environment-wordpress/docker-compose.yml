@@ -1,0 +1,21 @@
+version: '2.0'
+services:
+  server:
+    build: ./webserver
+    container_name: wordpress-server
+    ports:
+      - 8091:80
+    links:
+      - db
+    volumes:
+      - ./WordPress:/var/www/html
+      - ./signed-autoupdate/wordpress-plugin:/var/www/html/wp-content/plugins/signed-autoupdate
+  db:
+    container_name: wordpress-database
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=test123
+      - MYSQL_DATABASE=wordpressdb
+      - MYSQL_USER=wp
+      - MYSQL_PASSWORD=wp
+      - MYSQL_ROOT_HOST=%

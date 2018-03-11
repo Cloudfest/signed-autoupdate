@@ -5,3 +5,4 @@
 tmp/update-deploy/tmp/note.txt
 vendor
 composer.lock
+.DS_Store
