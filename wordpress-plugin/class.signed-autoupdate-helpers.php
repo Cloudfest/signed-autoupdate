@@ -16,7 +16,9 @@ if (!function_exists('signed_autoupdate_upgrader_pre_download')) {
         $info = pathinfo($package, PATHINFO_FILENAME);
 
         if (!preg_match('/([^.]+)\.([0-9\.]+)$/', $info, $res)) {
-            throw new Exception('unsupported download format, can not parse resulting unzip folder from: ' . $info);
+            #throw new Exception('unsupported download format, can not parse resulting unzip folder from: ' . $info);
+            $wpUpgrader->skin->feedback('will not continue package verification, format of uri not matching known patterns for: '. $info);
+            return false;
         }
         $pluginKey = $res[1];
 

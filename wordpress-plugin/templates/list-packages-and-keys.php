@@ -21,7 +21,7 @@ $oddEven = 0;
             <td><?=$packageInfo->getFingerPrint();?></td>
             <td>
                 <a href="<?php echo admin_url('admin.php?page=signed-autoupdate&amp;revoke=' . $packageInfo->getPluginSlug()); ?>">delete</a>
-                <a onclick="var k = prompt('please enter the key','some key');this.setAttribute('href', this.getAttribute('href')+'&amp;new='+k);" href="<?php echo admin_url('admin.php?page=signed-autoupdate&amp;edit=' . $packageInfo->getPluginSlug()); ?>">edit</a>
+                <a onclick="var k = prompt('please enter the key','some key');if(!k) return false; this.setAttribute('href', this.getAttribute('href')+'&amp;new='+k);" href="<?php echo admin_url('admin.php?page=signed-autoupdate&amp;edit=' . $packageInfo->getPluginSlug()); ?>">edit</a>
             </td>
         </tr>
         <?php endforeach; ?>
