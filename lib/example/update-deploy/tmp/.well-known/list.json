@@ -1,0 +1,14 @@
+{
+    "version": "1.0.0",
+    "algorithm": "sha1",
+    "signatures": [
+        {
+            "file": "simple_coco.php",
+            "hash": "f142fccb67b7acf5d5ab8a43a6e99f6e0f52cac7"
+        },
+        {
+            "file": "readme.txt",
+            "hash": "2806b91c5ccf930a5c40d6e0ff555b994bd460d7"
+        }
+    ]
+}
