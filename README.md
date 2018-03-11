@@ -1,22 +1,24 @@
 # Signed Autoupdate
 
-# Description
+## Description
 
 Project was created on cloudfest hackathon for prototyping a signed transfer of plugin packages from developer to users. The project constists of:
 
-- CLI (Tool for creation of keys and signature)
-- WordPress Plugin (A Demo plugin having the signature checks and public key management demonstrated)
-- WordPress Test Environment (a docker based setup for developing or showing the plugin)
+- [CLI](#cli) (Tool for creation of keys and signature)
+- [WordPress Plugin](#wordpress-plugin) (A Demo plugin having the signature checks and public key management demonstrated)
+- [WordPress Test Environment](#wordpress-test-environment) (a docker based setup for developing or showing the plugin)
 
-For testing purposes the WordPress Plugin: simple-cocomments was enhanced with .well-known/* information needed for the demonstration of signature / public key signed packing. 
+For testing purposes the WordPress Plugin: simple-cocomments was enhanced with .well-known/* information needed for the demonstration of signature / public key signed packing.
 
-## CLI
+## Libs
+
+### CLI
 
 The CLI helps you to generate a keypair, to sign a package and to verify you signed package.
 
-### Commands
+#### Commands
 
-#### `generator:generate`
+##### `generator:generate`
 
 To generate a new keypair run:
 
@@ -30,7 +32,7 @@ to get the complete list of parameters use:
 $ signer.phar generator:generate --help
 ```
 
-#### `signer:sign`
+##### `signer:sign`
 
 To sign a package, navigate to the package folder and run:
 
@@ -44,7 +46,7 @@ to get the complete list of parameters use:
 $ signer.phar signer:sign --help
 ```
 
-#### `signer:sign`
+##### `signer:sign`
 
 To verify a signed package, run:
 
@@ -58,7 +60,7 @@ to get the complete list of parameters use:
 $ signer.phar verifier:verify --help
 ```
 
-### Build phar package
+#### Build phar package
 
 To build a new `.phar` package, you have to install [box](https://github.com/box-project/box2#as-a-global-composer-install) and run
 
@@ -68,11 +70,11 @@ $ box build -v
 
 in the root of the `cli` folder.
 
-# WordPress Plugin
+### WordPress Plugin
 
-## Description
+#### Description
 
-Plugin will inject via add_filter into the download process of a plugin and checks for existence of some files. If 
+Plugin will inject via add_filter into the download process of a plugin and checks for existence of some files. If
 signatures existing it will try to verify the files signatures. The plugin also allows deletion and editing of public
 keys.
 
@@ -87,16 +89,16 @@ So:
 - the SAU Signatures shows already known signatures for editing / deletion
 
 
-## Screens
+#### Screens
 
 ![Package List View](doc/package-list-view.png)
 ![New Key Add During First Install](doc/new-key-found.png)
 ![Reject Installation on Error](doc/installation-rejected-key-mismatch.png)
 
 
-# WordPress Test Environment
+### WordPress Test Environment
 
-## Description
+#### Description
 
 The WordPress Test Environment was the idea for a one liner setup of the whole demonstration. Just execute ./do-it.sh , it will clone latest WordPress github, this repository, setup an apache with php7.2, a mysql container for the database. Uses wp-cli for setting up the wordpress with test123/test123 username on http://localhost:8091 .
 
